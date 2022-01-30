@@ -1,0 +1,38 @@
+:root {
+    --flex-gap : 1rem;
+
+    /* border radius */
+    --container-border: 0.3rem;
+
+
+    /* transitions */
+    --hover : 0.5s
+}
+
+body {
+    height:100vh;
+    margin: 0 auto;
+}
+
+div{
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.display-justify.center {
+    display:flex;
+    justify-content: center;
+}
+
+.display-center.align{
+    display:flex;
+    align-items: center;
+}
+
+.flex-grow {
+    flex-grow:1
+}
+
+.clickable-image {
+    cursor: pointer;
+}
