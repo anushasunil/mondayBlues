@@ -58,8 +58,12 @@ button:active {
     opacity:0.5;
 }
 
+
+
 .solid-disabled:active,
-.outline-disabled:active {
+.outline-disabled:active,
+.solid-disabled:hover,
+.outline-disabled:hover {
     box-shadow: var(--button-shadow);
     top:0;
 }
