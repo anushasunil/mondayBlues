@@ -3,8 +3,11 @@ body {
 }
 
 .alert-box {
+    width: clamp(60%,80%,90%);
     gap: var(--flex-gap);
     border-radius: var(--container-border);
+    padding:1rem;
+    margin: 1rem auto;
 }
 
 .alert-box p {
