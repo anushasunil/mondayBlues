@@ -1,0 +1,36 @@
+body {
+    background-color: var(--color-background-primary);
+}
+
+.alert-box {
+    width: clamp(60%,80%,90%);
+    gap: var(--flex-gap);
+    border-radius: var(--container-border);
+    padding:1rem;
+    margin: 1rem auto;
+}
+
+.alert-box p {
+    color: var(--color-primary)
+}
+
+.primary {
+    background-color: var(  --color-tertiary-variant);
+}
+
+.success {
+    background-color: var(--color-success);
+}
+
+.warning {
+    background-color: var(--color-warning);
+}
+
+.danger {
+    background-color: var(--color-error);
+}
+
+.alert-box:hover {
+    backdrop-filter: brightness(120%);
+    transition: var(--hover)
+}
