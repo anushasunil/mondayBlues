@@ -14,19 +14,19 @@ body {
     color: var(--color-primary)
 }
 
-.primary {
+.alert-box.primary {
     background-color: var(  --color-tertiary-variant);
 }
 
-.success {
+.alert-box.success {
     background-color: var(--color-success);
 }
 
-.warning {
+.alert-box.warning {
     background-color: var(--color-warning);
 }
 
-.danger {
+.alert-box.danger {
     background-color: var(--color-error);
 }
 
