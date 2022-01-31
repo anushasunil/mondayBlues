@@ -10,13 +10,7 @@
 }
 
 body {
-    height:100vh;
     margin: 0 auto;
-}
-
-div{
-    padding: 1rem;
-    margin: 2rem;
 }
 
 .display-justify.center {
@@ -24,7 +18,7 @@ div{
     justify-content: center;
 }
 
-.display-center.align{
+.display-align.center{
     display:flex;
     align-items: center;
 }
