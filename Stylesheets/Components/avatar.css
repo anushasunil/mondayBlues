@@ -1,0 +1,8 @@
+.avatar-container {
+    margin: 1rem;
+    overflow: hidden;
+    height:fit-content;
+    box-shadow: var(--icon-shadow);
+    background-color: var(--color-tertiary-variant);
+}
+
