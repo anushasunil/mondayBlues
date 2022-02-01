@@ -3,10 +3,14 @@
 
     /* border radius */
     --container-border: 0.3rem;
-
+    --button-border: 0.5rem;
 
     /* transitions */
-    --hover : 0.5s
+    --hover : 0.5s;
+
+    /* box-shadow */
+    --button-shadow:  0 0 5px 1px rgba(0, 0, 0, 0.39);
+    --button-shadow-hover:  0 0 5px 1px rgba(0, 0, 0, 0.623)
 }
 
 body {
@@ -16,6 +20,7 @@ body {
 .display-justify.center {
     display:flex;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 .display-justify.space-between {
@@ -26,6 +31,7 @@ body {
 .display-align.center{
     display:flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .flex-grow {

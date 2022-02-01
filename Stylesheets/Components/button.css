@@ -1,0 +1,111 @@
+button {
+    position:relative;
+    padding: 1rem;
+    margin:0.5rem;
+    border:none;
+    border-radius: var(--button-border);
+    font-weight: 600;
+    cursor:pointer;
+    box-shadow: var(--button-shadow)
+}
+
+button:hover {
+    transition: 0.5s;
+    box-shadow: var(--button-shadow-hover);
+}
+
+button:active {
+    top:1px;
+    box-shadow: none;
+}
+
+.solid-primary {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.solid-secondary {
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+}
+
+.solid-error {
+    background-color: var(--color-error);
+    color: var(--color-error-dark);
+}
+
+.solid-success {
+    background-color: var(--color-success);
+    color: var(--color-success-dark);
+}
+
+.solid-icon-only.light{
+    background-color: var(--color-tertiary-variant1);
+}
+
+.solid-icon-only.dark{
+    background-color: var(--color-accent);
+}
+
+.solid-icon-with-text img,
+.outline-icon-with-text img{
+  margin-right:0.5rem;
+}
+
+.solid-disabled,
+.outline-disabled {
+    cursor:not-allowed;
+    opacity:0.5;
+}
+
+
+
+.solid-disabled:active,
+.outline-disabled:active,
+.solid-disabled:hover,
+.outline-disabled:hover {
+    box-shadow: var(--button-shadow);
+    top:0;
+}
+
+.outline-primary {
+    background-color: var(--color-secondary-light);
+    border: 2px solid var(--color-primary);
+    color: white;
+}
+
+.outline-secondary {
+    background-color: var(--color-tertiary-light);
+    border: 2px solid var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.outline-icon-only.light{
+    background-color: var(--color-tertiary-variant2);
+    border: 2px solid var(--color-accent);
+}
+
+.outline-icon-only.dark{
+    background-color: var(--color-accent-light);
+    border: 2px solid var(--color-secondary);
+}
+
+.outline-error {
+    background-color: var(--color-error);
+    border: 2px solid var(--color-error-dark);
+    color: var(--color-error-dark);
+}
+
+.outline-success {
+    background-color: var(--color-success);
+    border: 2px solid var(--color-success-dark);
+    color: var(--color-success-dark);
+}
+
+.outline-icon-with-text {
+    border: 2px solid var(--color-primary);
+}
+
+.outline-disabled {
+    border: 2px solid var(--color-secondary)
+}
