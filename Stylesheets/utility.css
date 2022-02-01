@@ -5,6 +5,7 @@
     --container-border: 0.3rem;
     --circle-border: 100%;
     --squircle-border: 1rem;
+    --button-border: 0.5rem;
 
 
     /* transitions */
@@ -24,6 +25,9 @@
 
     --icon-shadow: 0 5px 10px 1px grey;
 
+    /* box-shadow */
+    --button-shadow:  0 0 5px 1px rgba(0, 0, 0, 0.39);
+    --button-shadow-hover:  0 0 5px 1px rgba(0, 0, 0, 0.623)
 }
 
 body {
