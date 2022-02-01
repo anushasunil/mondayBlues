@@ -3,22 +3,45 @@
 
     /* border radius */
     --container-border: 0.3rem;
+    --circle-border: 100%;
+    --squircle-border: 1rem;
 
 
     /* transitions */
-    --hover : 0.5s
+    --hover : 0.5s;
+
+    /* icon size */
+    --icon-size-xsmall: 3rem;
+    --icon-size-small: 5rem;
+    --icon-size-large: 7rem;
+    --icon-size-xlarge: 10rem;
+
+    /* avatar text size */
+    --text-size-xsmall: 1rem;
+    --text-size-small: 2rem;
+    --text-size-large: 2.2rem;
+    --text-size-xlarge: 3.5rem;
+
+    --icon-shadow: 0 5px 10px 1px grey;
+
 }
 
 body {
+    background-color: var(--color-background-primary);
     margin: 0 auto;
 }
 
-.display-justify.center {
+.display-justify-space-evenly {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.display-justify-center {
     display:flex;
     justify-content: center;
 }
 
-.display-align.center{
+.display-align-center{
     display:flex;
     align-items: center;
 }
