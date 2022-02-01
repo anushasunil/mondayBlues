@@ -18,6 +18,11 @@ body {
     justify-content: center;
 }
 
+.display-justify.space-between {
+    display:flex;
+    justify-content: space-between;
+}
+
 .display-align.center{
     display:flex;
     align-items: center;
