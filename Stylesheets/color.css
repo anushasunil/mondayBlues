@@ -12,9 +12,14 @@
     --color-background-variant: #f0ebd8;
     --color-background-primary: #f0ebd852;
     --color-error: #ae20297e;
+    --color-error-solid: #ae2029ce;
     --color-error-dark: #691419;
     --color-warning: #f674178c;
     --color-warning-dark: #994101;
     --color-success-dark: #295a40;
     --color-success: #58b984ad;
+    --color-success-solid: #58b984ce;
+    --color-offline: #808080cc;
+    --color-white: white;
+    --color-bright-red: #ff0000da;
 }
