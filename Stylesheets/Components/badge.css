@@ -91,18 +91,29 @@
     height: 2rem;
 }
 
-
-.avatar-badge-container:active .badge.notification{
+.avatar-badge-container:active .badge.notification {
     box-shadow: none;
     top:1px;
 }
 
-.badge.notification + .solid-icon-only, .badge.notification + .outline-icon-only {
+.badge.notification + .solid-icon-only, 
+.badge.notification + .outline-icon-only {
     padding:0;
 }
 
-.badge.notification + .solid-icon-only img, .badge.notification + .outline-icon-only img{
+.badge.notification + .solid-icon-only img, 
+.badge.notification + .outline-icon-only img{
     width:2rem;
     height:2rem;
     margin:0.5rem;
+}
+
+.avatar-badge-container:active .notification.text.large {
+    box-shadow: var(--badge-shadow);
+    top:-1.2rem;
+}
+
+.avatar-badge-container:active .notification.text {
+    box-shadow: var(--badge-shadow);
+    top:-0.7rem;
 }
