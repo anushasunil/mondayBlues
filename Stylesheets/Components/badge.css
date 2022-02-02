@@ -19,18 +19,18 @@
 }
 
 .squircle + .badge {
-    right: -0.5rem;
-    bottom: -0.5rem;
+    right: -8px;
+    bottom: -8px;
 }
 
 .squircle.xsmall + .badge {
-    right: -0.2rem;
-    bottom: -0.2rem;
+    right: -3px;
+    bottom: -3px;
 }
 
 .squircle.large + .badge {
-    right: -0.3rem;
-    bottom: -0.3rem;
+    right: -4px;
+    bottom: -4px;
 }
 
 .xsmall + .badge {
@@ -80,8 +80,8 @@
 }
 
 .badge.notification.text {
-    top: -0.7rem;
-    right:-0.7rem;
+    top: -12px;
+    right:-12px;
 }
 
 .notification.text.large {
@@ -105,7 +105,7 @@
 .badge.notification + .outline-icon-only img{
     width:2rem;
     height:2rem;
-    margin:0.5rem;
+    margin:8px;
 }
 
 .avatar-badge-container:active .notification.text.large {
@@ -115,5 +115,5 @@
 
 .avatar-badge-container:active .notification.text {
     box-shadow: var(--badge-shadow);
-    top:-0.7rem;
+    top:-12px;
 }
