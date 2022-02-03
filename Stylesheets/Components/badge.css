@@ -1,0 +1,122 @@
+.avatar-badge-container {
+    width:fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.avatar-badge-container .avatar-container, 
+.avatar-badge-container img {
+    margin:0;
+}
+
+.badge {
+    border-radius: var(--circle-border);
+    position:absolute;
+    right:0;
+    bottom:0;
+    z-index: 9;
+    box-shadow: var(--badge-shadow)
+}
+
+.squircle + .badge {
+    right: -8px;
+    bottom: -8px;
+}
+
+.squircle.xsmall + .badge {
+    right: -3px;
+    bottom: -3px;
+}
+
+.squircle.large + .badge {
+    right: -4px;
+    bottom: -4px;
+}
+
+.xsmall + .badge {
+    width: 1rem;
+    height: 1rem;
+    border: 3px solid var(--color-white);
+} 
+
+.small + .badge {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 4px solid var(--color-white);
+} 
+
+.large + .badge {
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid var(--color-white);
+} 
+
+.xlarge + .badge {
+    width: 3rem;
+    height: 3rem;
+    border: 6px solid var(--color-white);
+} 
+
+.badge.online {
+    background-color:var(--color-success-solid);
+}
+
+.badge.offline {
+    background-color: var(--color-offline);
+}
+
+.badge.dnd {
+    background-color: var(--color-error-solid);
+}
+
+.badge.notification {
+    top:-8px;
+    right:-8px;
+    border: none;
+    padding:8px;
+    padding-bottom: 5px;
+    width : fit-content;
+    height: fit-content;
+    background-color: var(--color-bright-red);
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.badge.notification.text {
+    top: -1.5rem;
+    right:-1.5rem;
+}
+
+.notification.text.large {
+    top: -1.8rem;
+    right:-1.5rem;
+    font-size: 1.5rem;
+}
+
+.avatar-badge-container:active .badge.notification {
+    box-shadow: none;
+    top:1px;
+}
+
+.badge.notification + .solid-icon-only, 
+.badge.notification + .outline-icon-only {
+    padding:0;
+}
+
+.badge.notification + .solid-icon-only img, 
+.badge.notification + .outline-icon-only img{
+    width:2rem;
+    height:2rem;
+    margin:8px;
+}
+
+.avatar-badge-container:active .notification.text.large {
+    box-shadow: var(--badge-shadow);
+    top:-1.2rem;
+}
+
+.avatar-badge-container:active .notification.text {
+    box-shadow: var(--badge-shadow);
+    top:-12px;
+}
