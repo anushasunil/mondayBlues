@@ -1,0 +1,51 @@
+.avatar-container {
+    margin: 1rem;
+    overflow: hidden;
+    height:fit-content;
+    box-shadow: var(--icon-shadow);
+    background-color: var(--color-tertiary-variant);
+}
+
+.avatar-container.circle{
+    border-radius: var(--circle-border);
+}
+
+.avatar-container.squircle{
+    border-radius: var(--squircle-border);
+}
+
+.avatar-container.xsmall {
+    width: var(--icon-size-xsmall);
+    height: var(--icon-size-xsmall);
+}
+
+.avatar-container.xsmall p{
+    font-size: var(--text-size-xsmall);
+}
+
+.avatar-container.small {
+    width: var(--icon-size-small);
+    height: var(--icon-size-small);
+}
+
+.avatar-container.small p{
+    font-size: var(--text-size-small);
+}
+
+.avatar-container.large {
+    width: var(--icon-size-large);
+    height: var(--icon-size-large);
+}
+
+.avatar-container.large p{
+    font-size: var(--text-size-large);
+}
+
+.avatar-container.xlarge {
+    width: var(--icon-size-xlarge);
+    height: var(--icon-size-xlarge);
+}
+
+.avatar-container.xlarge p{
+    font-size: var(--text-size-xlarge);
+}
