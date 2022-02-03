@@ -70,25 +70,28 @@
 }
 
 .badge.notification {
-    top:0;
+    top:-8px;
+    right:-8px;
     border: none;
-    width : 1.5rem;
-    height: 1.5rem;
+    padding:8px;
+    padding-bottom: 5px;
+    width : fit-content;
+    height: fit-content;
     background-color: var(--color-bright-red);
     color: var(--color-white);
     font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .badge.notification.text {
-    top: -12px;
-    right:-12px;
+    top: -1.5rem;
+    right:-1.5rem;
 }
 
 .notification.text.large {
-    top: -1.2rem;
-    right:-1rem;
-    width : 2rem;
-    height: 2rem;
+    top: -1.8rem;
+    right:-1.5rem;
+    font-size: 1.5rem;
 }
 
 .avatar-badge-container:active .badge.notification {
