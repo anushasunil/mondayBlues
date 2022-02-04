@@ -34,6 +34,11 @@ body {
     margin: 0 auto;
 }
 
+.display-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 .display-justify-space-evenly {
     display:flex;
     justify-content: space-evenly;
@@ -45,7 +50,7 @@ body {
     flex-wrap:wrap;
 }
 
-.display-justify.space-between {
+.display-justify-space-between {
     display:flex;
     justify-content: space-between;
 }
@@ -54,6 +59,10 @@ body {
     display:flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.display-align-self-flex-end {
+    align-self:flex-end ;
 }
 
 .flex-grow {
