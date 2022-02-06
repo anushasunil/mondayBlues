@@ -50,6 +50,12 @@ body {
     flex-wrap:wrap;
 }
 
+.display-justify-flex-end {
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap:wrap;
+}
+
 .display-justify-space-between {
     display:flex;
     justify-content: space-between;
@@ -71,4 +77,8 @@ body {
 
 .clickable-image {
     cursor: pointer;
+}
+
+.strike-off {
+    text-decoration:line-through;
 }
