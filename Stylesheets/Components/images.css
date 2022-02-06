@@ -1,9 +1,9 @@
-.image-container {
-    width: fit-content;
-}
-
 .image-container, .image-container img{
     margin:0 auto;
+}
+
+.image-container, .image-container.square{
+    width: fit-content;
 }
 
 .image-container.circle {
