@@ -1,4 +1,4 @@
-img {
+.card-img, .star-img,.button-icons {
     display:inline-block;
     margin:0;
 }
@@ -73,7 +73,7 @@ button {
     font-size: 1.4rem;
 }
 
-.ratings img {
+.ratings .star-img {
     width:1.2rem
 }
 
@@ -104,5 +104,5 @@ button {
 
 
 .with-shadow {
-    box-shadow:0 0 20px -1px rgba(128, 128, 128, 0.39);
+    box-shadow:var(--card-box-shadow);
 }
