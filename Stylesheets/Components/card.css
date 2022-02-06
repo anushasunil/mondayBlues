@@ -1,0 +1,112 @@
+img {
+    display:inline-block;
+    margin:0;
+}
+
+.image-container {
+    position: relative;
+    width:100%;
+}
+
+.actions {
+    gap:12px;
+}
+
+button {
+  gap:8px;
+  margin: 0;
+}
+
+.card {
+    padding: 10px 10px 10px 12px;
+    width: 25rem;
+    height: fit-content;
+    background-color: var(--color-white);
+    box-shadow:0 0 2px -1px grey;
+    position: relative;
+    border-radius: 8px;
+}
+/* 
+.card:hover {
+    box-shadow: var(--button-shadow-hover);
+} */
+
+.badge{
+    border-radius: 8px 0 0 8px;
+    background-color: var(--color-bright-red);
+    padding: 8px;
+    color: var(--color-white);
+    padding-right: 8px;
+    top:0;
+    bottom:initial;
+    right:-1rem;
+    width:fit-content;
+}
+
+.dismiss {
+    position:absolute;
+    top: 0;
+    right:0;
+    width: 2rem;
+}
+
+.content h3 {
+    font-size: 2rem;
+}
+
+.three .image-container {
+    padding-bottom: 2rem
+}
+
+.text-overlay {
+    position: absolute;
+    bottom:0;
+    padding-top: 10px;
+    backdrop-filter: blur(2px);
+}
+
+.price {
+    color: var(--color-success-dark);
+    font-size: 2rem;
+    gap: 10px;
+    padding: 8px;
+}
+
+.strike-off {
+    color: var(--color-error-dark);
+    font-size: 1.4rem;
+}
+
+.ratings img {
+    width:1.2rem
+}
+
+.ratings .count {
+    margin: 8px;
+} 
+
+.four .content {
+    padding: 1rem 0;
+}
+
+.horizontal-card .image-container{
+    margin:0;
+    width: fit-content;
+}
+
+.horizontal-card {
+    padding-top:1.5rem;
+    width:35rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.horizontal-card .content {
+    flex-grow: 1;
+}
+
+
+.with-shadow {
+    box-shadow:0 0 20px -1px rgba(128, 128, 128, 0.39);
+}
