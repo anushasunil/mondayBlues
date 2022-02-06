@@ -26,10 +26,6 @@ button {
     position: relative;
     border-radius: 8px;
 }
-/* 
-.card:hover {
-    box-shadow: var(--button-shadow-hover);
-} */
 
 .badge{
     border-radius: 8px 0 0 8px;
@@ -54,7 +50,7 @@ button {
     font-size: 2rem;
 }
 
-.three .image-container {
+.with-text-overlay .image-container {
     padding-bottom: 2rem
 }
 
@@ -85,7 +81,7 @@ button {
     margin: 8px;
 } 
 
-.four .content {
+.only-text .content {
     padding: 1rem 0;
 }
 
