@@ -1,40 +1,40 @@
-.element.a, .element.f {
-    grid-area: a;
+.grid-element.one {
+    grid-area: one;
     background-color: var(--color-primary);
 }
 
-.element.b {
-    grid-area: b;
+.grid-element.two {
+    grid-area: two;
     background-color: var(--color-secondary);
 }
 
-.element.c {
-    grid-area: c;
+.grid-element.three {
+    grid-area: three;
     background-color: var(--color-tertiary);
 }
 
-.element.d {
-    grid-area: d;
+.grid-element.four {
+    grid-area: four;
     background-color: var(--color-accent-light);
 }
 
-.element.e {
-    grid-area: e;
+.grid-element.five {
+    grid-area: five;
     background-color: var(--color-tertiary-variant2);
 }
 
-.element.f {
-    grid-area: f;
+.grid-element.six {
+    grid-area: six;
     background-color: var(--color-secondary);
 }
 
-.element.g {
-    grid-area: g;
+.grid-element.seven {
+    grid-area: seven;
     background-color: var(--color-primary);
 }
 
-.element.h {
-    grid-area: h;
+.grid-element.eight {
+    grid-area: eight;
     background-color: var(--color-tertiary);
 }
 
@@ -45,13 +45,13 @@
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 8px;
     grid-template-areas: 
-    'a a a a'
-    'b b b c'
-    'd e e f'
-    'g g h h';
+    'one   one   one   one'
+    'two   two   two   three'
+    'four  five  five  six'
+    'seven seven eight eight';
 }
 
-.element {
+.grid-element {
     padding: 2rem;
     border-radius: var(--container-border);
 }
