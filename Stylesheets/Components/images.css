@@ -1,0 +1,12 @@
+.image-container, .image-container img{
+    margin:0 auto;
+}
+
+.image-container, .image-container.square{
+    width: fit-content;
+}
+
+.image-container.circle {
+    border-radius: var(--circle-border);
+    overflow: hidden;
+}
