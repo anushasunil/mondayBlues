@@ -11,12 +11,16 @@
     --color-tertiary-variant2: #748cab91;
     --color-bright-blue:#cfe4ff;
     --color-background-variant: #f0ebd8;
+    --color-background-dull: #f5f0e1;
     --color-background-primary: #f0ebd852;
     --color-error: #ae20297e;
     --color-error-solid: #ae2029ce;
     --color-error-dark: #691419;
     --color-warning: #f674178c;
     --color-warning-dark: #994101;
+    --color-orange: #ffa600;
+    --color-dark-green:#004600;
+    --color-bright-green:#388538;
     --color-success-dark: #295a40;
     --color-success: #58b984ad;
     --color-success-solid: #58b984ce;
