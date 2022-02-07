@@ -1,0 +1,40 @@
+.rating-container {
+    width: fit-content;
+    height: fit-content;
+    gap: 1rem;
+    background-color: var(--color-background-dull);
+    padding: 8px;
+    border-radius: var(--container-border);
+}
+
+.rating-star{
+    margin:0;
+    position:relative;
+}
+
+.rating-container.badge {
+    position: static;
+    border-radius: var(--container-border);
+    box-shadow: none;
+    gap: 8px;
+}
+
+.rating-container.badge.verybad {
+    background-color: var(--color-error-dark);
+}
+
+.rating-container.badge.bad {
+    background-color: var(--color-bright-red);
+}
+
+.rating-container.badge.okay {
+    background-color: var(--color-orange);
+}
+
+.rating-container.badge.good {
+    background-color: var(--color-bright-green);
+}
+
+.rating-container.badge.verygood {
+    background-color: var(--color-dark-green);
+}
