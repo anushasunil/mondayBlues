@@ -1,0 +1,57 @@
+.element.a, .element.f {
+    grid-area: a;
+    background-color: var(--color-primary);
+}
+
+.element.b {
+    grid-area: b;
+    background-color: var(--color-secondary);
+}
+
+.element.c {
+    grid-area: c;
+    background-color: var(--color-tertiary);
+}
+
+.element.d {
+    grid-area: d;
+    background-color: var(--color-accent-light);
+}
+
+.element.e {
+    grid-area: e;
+    background-color: var(--color-tertiary-variant2);
+}
+
+.element.f {
+    grid-area: f;
+    background-color: var(--color-secondary);
+}
+
+.element.g {
+    grid-area: g;
+    background-color: var(--color-primary);
+}
+
+.element.h {
+    grid-area: h;
+    background-color: var(--color-tertiary);
+}
+
+.grid-container {
+    width: clamp(60%, 70%, 80%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 8px;
+    grid-template-areas: 
+    'a a a a'
+    'b b b c'
+    'd e e f'
+    'g g h h';
+}
+
+.element {
+    padding: 2rem;
+    border-radius: var(--container-border);
+}
