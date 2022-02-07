@@ -1,0 +1,46 @@
+.snackbars {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    padding: 1rem;
+    border-radius: var(--container-border);
+    box-shadow: var(--snackbar-shadow);
+}
+
+.snackbars .action-btn {
+    color: var(--color-bright-blue);
+    margin: 0 8px;
+    font-weight: 800;
+}
+
+.snackbars .dismiss {
+    position: static;
+}
+
+.snackbars.stacked {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 8px;
+}
+
+.snackbars.baseline,
+.snackbars.leading {
+    gap: 4rem;
+}
+
+.snackbars.stacked .message {
+    grid-column: 1/span 2;
+}
+
+.snackbars .message {
+    font-weight: 400;
+}
+
+.message .suggestion {
+    font-weight: 700;
+}
+
+.snackbars.stacked .actions {
+    grid-column: 2/3;
+}
