@@ -27,6 +27,7 @@
     --button-shadow-hover:  0 0 5px 1px rgba(0, 0, 0, 0.623);
     --icon-shadow: 0 5px 10px 1px grey;
     --badge-shadow: 2px 3px 5px -1px rgba(128, 128, 128, 0.876);
+    --card-box-shadow: 0 0 20px -1px rgba(128, 128, 128, 0.39);
 }
 
 body {
@@ -47,6 +48,12 @@ body {
 .display-justify-center {
     display:flex;
     justify-content: center;
+    flex-wrap:wrap;
+}
+
+.display-justify-flex-end {
+    display:flex;
+    justify-content: flex-end;
     flex-wrap:wrap;
 }
 
@@ -71,4 +78,8 @@ body {
 
 .clickable-image {
     cursor: pointer;
+}
+
+.strike-off {
+    text-decoration:line-through;
 }
