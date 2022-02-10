@@ -2,6 +2,10 @@ body {
     background-color: var(--color-background-primary);
 }
 
+.alert-box, .alert-content{
+    flex-wrap: nowrap;
+}
+
 .alert-box {
     width: clamp(60%,80%,90%);
     border-radius: var(--container-border);
@@ -13,6 +17,14 @@ body {
     color: var(--color-primary)
 }
 
+.alert-box i {
+    font-size: 1.3rem;
+}
+
+
+.alert-content .icon {
+    marging-right:1rem;
+
 .alert-box.primary {
     background-color: var(  --color-tertiary-variant);
 }
@@ -21,12 +33,25 @@ body {
     background-color: var(--color-success);
 }
 
+.alert-box.success .icon {
+    color:var(--color-success-dark)
+}
+
 .alert-box.warning {
     background-color: var(--color-warning);
 }
 
+.alert-box.warning .icon {
+    color:var(--color-warning-dark)
+}
+
+
 .alert-box.danger {
     background-color: var(--color-error);
+}
+
+.alert-box.danger .icon {
+    color:var(--color-error-dark)
 }
 
 .alert-box:hover {
