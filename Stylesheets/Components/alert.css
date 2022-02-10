@@ -24,6 +24,7 @@ body {
 
 .alert-content .icon {
     marging-right:1rem;
+}
 
 .alert-box.primary {
     background-color: var(  --color-tertiary-variant);
