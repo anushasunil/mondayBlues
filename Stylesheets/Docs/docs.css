@@ -126,15 +126,6 @@ aside {
     margin: 0 auto;
 }
 
-.snippet-btn {
-    position:absolute;
-    top:8px;
-    right:8px;
-    box-shadow: none;
-    outline: var(--color-gray);
-    background-color: var(--color-reset);
-}
-
 /* about component */
 
 .about-component {
@@ -152,6 +143,15 @@ aside {
     font-size: 1.5rem;
    text-align: center;
     font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.for-badge {
+    display: grid; 
+    justify-content: center; 
+    grid-template-columns: 1fr 2fr 3fr 4fr;align-items: center;
+    justify-items: center;
+    gap:1rem;
 }
 
 footer {
