@@ -27,7 +27,7 @@ button {
     border-radius: 8px;
 }
 
-.badge{
+.card .badge{
     border-radius: 8px 0 0 8px;
     background-color: var(--color-bright-red);
     padding: 8px;
