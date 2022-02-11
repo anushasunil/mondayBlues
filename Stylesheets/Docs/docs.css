@@ -152,6 +152,10 @@ aside {
     padding: 1rem;
 }
 
+.demo-wrapper {
+    padding: 1rem;
+}
+
 .for-badge {
     display: grid; 
     justify-content: center;
@@ -164,6 +168,10 @@ aside {
 
 .for-badge.text {
     grid-template-columns: 250px 250px;
+}
+
+.for-button {
+    gap: 1rem;
 }
 
 footer {
