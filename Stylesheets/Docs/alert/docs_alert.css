@@ -8,15 +8,12 @@
 nav {
     font-family: 'Playfair Display', serif;
     background-color: var(--color-tertiary-light);
-    /* color: #dddbd6; */
     padding:1.5rem;
 }
 
 h1.title {
-    /* font-family: 'Playfair Display', serif; */
     font-size: 200%;
     padding: 10px 0;
-    /* color: var(--color-white) */
 }
 
 .hamburger-nav {
@@ -46,10 +43,6 @@ h1.title {
 .main-container {
     width: 60%;
     margin: 0 auto;
-    /* position:relative; */
-    /* display: grid; */
-    /* grid-template-columns: 20rem 1fr; */
-
 }
 
 /* aside background */
@@ -72,33 +65,24 @@ aside {
     color: var(--color-white);
     padding-top:2rem;
     width: 22rem;
-    /* min-width: 15rem; */
     position: fixed;
-    /* height:fit-content; */
     top:0;
     bottom:0;
-    /* border-right: 1px solid var(--color-gray); */
-    /* display:none; */
     z-index: 9;
     transform: translateX(-22rem);
     transition: transform .3s ease-in;
 }
 
 .aside-heading {
-    /* color: var(--color-white); */
     margin:0 2rem 1rem 1.5rem;
     padding: 1rem 0;
     font-size: 1.7rem;
     border-bottom: 1px solid;
-
 }
 
 .component-redirect {
     overflow: auto;
     padding: 0 1rem 0 1rem;
-    /* border-right:1px solid; */
-    /* color:var(--color-white); */
-    /* margin-top:4rem */
 }
 
 .component {
@@ -107,7 +91,6 @@ aside {
     padding: 1rem;
     cursor: pointer;
     width:65%;
-    /* overflow-x: visible; */
 }
 
 .component:hover {
@@ -120,7 +103,6 @@ aside {
 .component-name {
     font-weight: 400;
     font-size: 1.4rem;
-    /* opacity: 0.8; */
 }
 
 .component:hover .component-name {
@@ -129,11 +111,8 @@ aside {
 
 /* component-content */
 .component-content {
-    /* border:1px solid; */
     margin:2rem 0;
     width:100%;
-    /* overflow: auto; */
-     /* border-left: 1px solid var(--color-gray); */
 }
 
 .component-heading{
@@ -141,17 +120,10 @@ aside {
     padding-bottom: 1rem;
     font-weight: 700;
 }
-.demo-wrapper {
-    /* padding: 1rem 0; */
-    /* width:fit-content; */
-    /* width:40%; */
-}
 
 .code-wrapper, iframe {
     border-radius: var(--container-border);
     margin: 0 auto;
-    /* height:20rem; */
-    /* overflow-x: auto; */
 }
 
 .snippet-btn {
@@ -167,7 +139,6 @@ aside {
 
 .about-component {
     padding:1.5rem;
-    /* width:100%; */
 }
 
 
@@ -202,11 +173,6 @@ footer a:hover {
 }
 
 @media (max-width:960px) {
-
-    /* nav .title {
-        font-size: 2.3rem;
-    } */
-
     .main-container {
         width:80%;
     }
@@ -214,8 +180,6 @@ footer a:hover {
 }
 
 @media (max-width:650px) {
-
-
     html {
         font-size: 14px;
     }
@@ -232,11 +196,6 @@ footer a:hover {
 
 
 @media (max-width:480px) {
-
-    /* nav .title {
-        font-size: 2rem;
-    } */
-
     .main-container {
         width:100%;
     }
