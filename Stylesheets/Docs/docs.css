@@ -9,6 +9,12 @@ nav {
     font-family: 'Playfair Display', serif;
     background-color: var(--color-tertiary-light);
     padding:1.5rem;
+    position:sticky;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 7;
+
 }
 
 h1.title {
@@ -126,15 +132,6 @@ aside {
     margin: 0 auto;
 }
 
-.snippet-btn {
-    position:absolute;
-    top:8px;
-    right:8px;
-    box-shadow: none;
-    outline: var(--color-gray);
-    background-color: var(--color-reset);
-}
-
 /* about component */
 
 .about-component {
@@ -152,12 +149,30 @@ aside {
     font-size: 1.5rem;
    text-align: center;
     font-weight: 700;
+    padding: 1rem;
+}
+
+.for-badge {
+    display: grid; 
+    justify-content: center;
+    grid-template-columns: 100px 150px 200px 250px;
+    align-items: center;
+    justify-items: center;
+    gap:1rem;
+    margin:1rem;
+}
+
+.for-badge.text {
+    grid-template-columns: 250px 250px;
 }
 
 footer {
+    position:sticky;
+    bottom:0;
     background-color: var(--color-primary);
     color:white;
     padding: 2rem;
+    z-index: 5;
 }
 
 .footer-text {
