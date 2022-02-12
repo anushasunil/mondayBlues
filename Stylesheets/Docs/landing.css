@@ -48,9 +48,4 @@ h1 {
     html {
         font-size: 12px;
     }
-    
-    footer.fixed {
-        position:sticky
-    }
-
 }
