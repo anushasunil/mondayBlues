@@ -6,29 +6,42 @@
 }
 
 h1 {
-    font-weight: 900;
     font-size: 3rem;
 }
 
 h2 {
-    font-weight: 700;
     font-size: 2.5rem;
 }
 
 h3 {
-    font-weight: 600;
     font-size: 2.2rem;
 }
 
-p {
-    font-weight: 500;
-    font-size: 1.2rem;
+h4 {
+    font-size: 2rem;
 }
 
-label, span {
+h5 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+label,
+span {
     font-weight: 300;
 }
 
 .disabled {
     color: var(--color-disabled)
+}
+
+.bold {
+    font-weight: 900;
 }
