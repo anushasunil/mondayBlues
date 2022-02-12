@@ -142,8 +142,15 @@ aside::-webkit-scrollbar {
 
 .about-component {
     padding:1.5rem;
+    font-size: 1.6rem;
+    line-height: 140%;
 }
 
+.highlight {
+    background-color: var(--color-tertiary-variant1);
+    padding: 4px;
+    border-radius: var(--container-border);
+}
 
 /* variants */
 .variant-info {
@@ -193,6 +200,12 @@ aside::-webkit-scrollbar {
 
 .for-inputs label {
     font-weight: 500;
+}
+
+footer.intro {
+    position: fixed;
+    left:0;
+    right:0;
 }
 
 footer {
