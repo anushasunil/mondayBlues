@@ -8,6 +8,11 @@
 
 .main-container {
     align-self: center;
+    margin-bottom: 5rem;
+}
+
+.actions {
+    margin:1rem;
 }
 
 h1 {
@@ -37,4 +42,10 @@ h1 {
 
 .logo-nav {
     width: 4rem;
+}
+
+@media (max-width:850px) {
+    html {
+        font-size: 12px;
+    }
 }
