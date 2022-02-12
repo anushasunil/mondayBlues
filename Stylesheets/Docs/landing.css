@@ -1,0 +1,40 @@
+@import url(/Stylesheets/main.css);
+@import url(/Stylesheets/Docs/docs.css);
+
+.page-content {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.main-container {
+    align-self: center;
+}
+
+h1 {
+    font-size:400%;
+    color: var(--color-secondary)
+}
+
+.secondary-heading, .tertiary-heading {
+    line-height: 200%;
+}
+
+.heading {
+    gap: 1rem;
+}
+
+.image-container {
+    width:15%;
+}
+
+.logo, .logo-nav, .image-container {
+    margin: 0;
+}
+
+.logo {
+    width: 100%;
+}
+
+.logo-nav {
+    width: 4rem;
+}

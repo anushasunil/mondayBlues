@@ -202,7 +202,7 @@ aside::-webkit-scrollbar {
     font-weight: 500;
 }
 
-footer.intro {
+footer.fixed {
     position: fixed;
     left:0;
     right:0;
