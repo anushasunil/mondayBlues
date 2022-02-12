@@ -29,5 +29,6 @@
     --color-white: white;
     --color-bright-red: #ff0000da;
     --color-gray: #333333;
+    --color-disabled:#33333360;
     --color-reset: #ffffff00;
 }
