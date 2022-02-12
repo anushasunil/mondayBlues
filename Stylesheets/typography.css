@@ -38,6 +38,10 @@ span {
     font-weight: 300;
 }
 
+.text-align-center {
+    text-align: center;
+}
+
 .disabled {
     color: var(--color-disabled)
 }
