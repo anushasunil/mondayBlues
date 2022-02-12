@@ -43,5 +43,17 @@ span {
 }
 
 .bold {
-    font-weight: 900;
+    font-weight: 700;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.regular {
+    font-size: 500;
+}
+
+.light {
+    font-weight: 300;
 }
