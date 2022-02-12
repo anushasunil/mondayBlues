@@ -12,6 +12,10 @@
     position:relative;
 }
 
+.ratings-value {
+    color: var(--color-white)
+}
+
 .rating-container.badge {
     position: static;
     border-radius: var(--container-border);
