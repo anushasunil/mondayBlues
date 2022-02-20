@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/Stylesheets/Abstract/fontawesome-free-6.0.0-web/css/all.css">
     <link rel="shortcut icon" href="Assets/images/logo-modified.png" type="image/x-icon">
     <link rel="stylesheet" href="/Stylesheets/Docs/docs.css">
+    <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -26,7 +29,7 @@
                 <h2 class="title">mondayblues</h2>
             </div>
             <div class="navbar">
-                <button class="nav-btn solid-secondary"><a href="https://github.com/anushasunil">gitHub</a> </button>
+                <button class="nav-btn solid-secondary"><a href="https://github.com/anushasunil/mondayblues">gitHub</a> </button>
                 <button class="nav-btn solid-primary"><a href="/index.html">Home</a></button>
             </div>
         </nav>
@@ -106,11 +109,22 @@
                             </div>
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522snackbars%2520baseline%2520display-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Failed%2520to%2520send%2520message.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522suggestion%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Retry%2520in%25205%2520seconds%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522actions-baseline%2520display-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522action-btn%2520clickable-image%2522%253ERETRY%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fclose_white.svg%2522%2520alt%253D%2522close%2522%2520class%253D%2522dismiss%2520clickable-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
-                        style="width: 934px; height: 392px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+&lt;div class=&quot;snackbars baseline display-align-center&quot;&gt;
+    &lt;p class=&quot;message&quot;&gt;
+        Failed to send message.
+        &lt;span class=&quot;suggestion&quot;&gt;
+            Retry in 5 seconds
+        &lt;/span&gt;
+    &lt;/p&gt;
+    &lt;div class=&quot;actions-baseline display-align-center&quot;&gt;
+        &lt;span class=&quot;action-btn clickable-image&quot;&gt;RETRY&lt;/span&gt;
+        &lt;img src=&quot;/Assets/icons/close_white.svg&quot; alt=&quot;close&quot; class=&quot;dismiss clickable-image&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -127,11 +141,19 @@
                             </div>
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522snackbars%2520leading%2520display-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522message%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Your%2520photo%2520has%2520been%2520archived%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522actions-leading%2520display-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522action-btn%2520clickable-image%2522%253EUNDO%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fclose_white.svg%2522%2520alt%253D%2522close%2522%2520class%253D%2522dismiss%2520clickable-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
-                        style="width: 934px; height: 336px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+&lt;div class=&quot;snackbars leading display-align-center&quot;&gt;
+    &lt;p class=&quot;message&quot;&gt;
+        Your photo has been archived
+    &lt;/p&gt;
+    &lt;div class=&quot;actions-leading display-align-center&quot;&gt;
+        &lt;span class=&quot;action-btn clickable-image&quot;&gt;UNDO&lt;/span&gt;
+        &lt;img src=&quot;/Assets/icons/close_white.svg&quot; alt=&quot;close&quot; class=&quot;dismiss clickable-image&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                                        </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -146,11 +168,17 @@
                             </div>
                         </div>
                     </div>
-                    <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522snackbars%2520stacked%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522message%2522%253EThis%2520photo%2520already%2520has%2520the%2520label%2520%2522travel%2522.%2520You%2520can%2520add%2520a%2520new%2520label%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522actions%2520display-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522action-btn%2520clickable-image%2522%253EAdd%2520a%2520new%2520label%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fclose_white.svg%2522%2520alt%253D%2522close%2522%2520class%253D%2522dismiss%2520clickable-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
-                    style="width: 934px; height: 299px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                  </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+&lt;div class=&quot;snackbars stacked&quot;&gt;
+    &lt;p class=&quot;message&quot;&gt;This photo already has the label &quot;travel&quot;. You can add a new label&lt;/p&gt;
+    &lt;div class=&quot;actions display-align-center&quot;&gt;
+        &lt;span class=&quot;action-btn clickable-image&quot;&gt;Add a new label&lt;/span&gt;
+        &lt;img src=&quot;/Assets/icons/close_white.svg&quot; alt=&quot;close&quot; class=&quot;dismiss clickable-image&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
             </div>
         </div>
@@ -158,7 +186,12 @@
             <p class="footer-text">created by <a href="https://github.com/anushasunil">anushasunil</a> - @neoGcamp</p>
         </footer>
     </div>
+    <script src="/Stylesheets/Docs/docs_nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/Stylesheets/Docs/codeblocks/codeblocks.js"></script>
 </body>
-<script src="/Stylesheets/Docs/docs_nav.js"></script>
 
 </html>

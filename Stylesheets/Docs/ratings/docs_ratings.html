@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/Stylesheets/Abstract/fontawesome-free-6.0.0-web/css/all.css">
     <link rel="shortcut icon" href="Assets/images/logo-modified.png" type="image/x-icon"> 
     <link rel="stylesheet" href="/Stylesheets/Docs/docs.css">
+    <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -104,15 +107,24 @@
                             <small class="rating-count"><i>80</i></small>
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522rating-container%2520display-align-center%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522star-container%2520display-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fstar.svg%2522%2520alt%253D%2522star%2522%2520class%253D%2522rating-star%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fstar.svg%2522%2520alt%253D%2522star%2522%2520class%253D%2522rating-star%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fstar.svg%2522%2520alt%253D%2522star%2522%2520class%253D%2522rating-star%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fstar_border.svg%2522%2520alt%253D%2522star%2522%2520class%253D%2522rating-star%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fstar_border.svg%2522%2520alt%253D%2522star%2522%2520class%253D%2522rating-star%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522rating-count%2522%253E%253Ci%253E80%253C%252Fi%253E%253C%252Fsmall%253E%250A%253C%252Fdiv%253E"
-                        style="width: 825px; height: 372px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                   <pre id="myInput">
+<code class="language-html">
+&lt;div class=&quot;rating-container display-align-center&quot;&gt;
+    &lt;div class=&quot;star-container display-align-center&quot;&gt;
+        &lt;img src=&quot;/Assets/icons/star.svg&quot; alt=&quot;star&quot; class=&quot;rating-star&quot;&gt;
+        &lt;img src=&quot;/Assets/icons/star.svg&quot; alt=&quot;star&quot; class=&quot;rating-star&quot;&gt;
+        &lt;img src=&quot;/Assets/icons/star.svg&quot; alt=&quot;star&quot; class=&quot;rating-star&quot;&gt;
+        &lt;img src=&quot;/Assets/icons/star_border.svg&quot; alt=&quot;star&quot; class=&quot;rating-star&quot;&gt;
+        &lt;img src=&quot;/Assets/icons/star_border.svg&quot; alt=&quot;star&quot; class=&quot;rating-star&quot;&gt;
+    &lt;/div&gt;
+    &lt;small class=&quot;rating-count&quot;&gt;&lt;i&gt;80&lt;/i&gt;&lt;/small&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                   </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
-                        Shrank Ratings
+                        Badge Ratings
                     </h3>
                     <p class="variant-info">- badge-type ratings </p>
                     <div class="demo-wrapper display-align-center display-justify-center for-ratings">
@@ -137,11 +149,35 @@
                             <img src="/Assets/icons/star_white.svg" alt="star" class="rating-star">
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating-container%2520%2520badge%2520display-align-center%2520verybad%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522ratings-value%2522%253E1.0%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fstar_white.svg%2522%2520alt%253D%2522star%2522%2520class%253D%2522rating-star%2522%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522rating-container%2520%2520badge%2520display-align-center%2520bad%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522ratings-value%2522%253E2.0%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fstar_white.svg%2522%2520alt%253D%2522star%2522%2520class%253D%2522rating-star%2522%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522rating-container%2520%2520badge%2520display-align-center%2520okay%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522ratings-value%2522%253E3.0%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fstar_white.svg%2522%2520alt%253D%2522star%2522%2520class%253D%2522rating-star%2522%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522rating-container%2520%2520badge%2520display-align-center%2520good%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522ratings-value%2522%253E4.0%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fstar_white.svg%2522%2520alt%253D%2522star%2522%2520class%253D%2522rating-star%2522%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522rating-container%2520%2520badge%2520display-align-center%2520verygood%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522ratings-value%2522%253E5.0%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fstar_white.svg%2522%2520alt%253D%2522star%2522%2520class%253D%2522rating-star%2522%253E%250A%253C%252Fdiv%253E"
-                        style="width: 783px; height: 633px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+&lt;div class=&quot;rating-container  badge display-align-center verybad&quot;&gt;
+    &lt;p class=&quot;ratings-value&quot;&gt;1.0&lt;/p&gt;
+    &lt;img src=&quot;/Assets/icons/star_white.svg&quot; alt=&quot;star&quot; class=&quot;rating-star&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;rating-container  badge display-align-center bad&quot;&gt;
+    &lt;p class=&quot;ratings-value&quot;&gt;2.0&lt;/p&gt;
+    &lt;img src=&quot;/Assets/icons/star_white.svg&quot; alt=&quot;star&quot; class=&quot;rating-star&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;rating-container  badge display-align-center okay&quot;&gt;
+    &lt;p class=&quot;ratings-value&quot;&gt;3.0&lt;/p&gt;
+    &lt;img src=&quot;/Assets/icons/star_white.svg&quot; alt=&quot;star&quot; class=&quot;rating-star&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;rating-container  badge display-align-center good&quot;&gt;
+    &lt;p class=&quot;ratings-value&quot;&gt;4.0&lt;/p&gt;
+    &lt;img src=&quot;/Assets/icons/star_white.svg&quot; alt=&quot;star&quot; class=&quot;rating-star&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;rating-container  badge display-align-center verygood&quot;&gt;
+    &lt;p class=&quot;ratings-value&quot;&gt;5.0&lt;/p&gt;
+    &lt;img src=&quot;/Assets/icons/star_white.svg&quot; alt=&quot;star&quot; class=&quot;rating-star&quot;&gt;
+&lt;/div&gt;
+
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
             </div>
         </div>
@@ -149,7 +185,12 @@
             <p class="footer-text">created by <a href="https://github.com/anushasunil">anushasunil</a> - @neoGcamp</p>
         </footer>
     </div>
+    <script src="/Stylesheets/Docs/docs_nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/Stylesheets/Docs/codeblocks/codeblocks.js"></script>
 </body>
-<script src="/Stylesheets/Docs/docs_nav.js"></script>
 
 </html>

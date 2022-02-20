@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/Stylesheets/Abstract/fontawesome-free-6.0.0-web/css/all.css">
     <link rel="shortcut icon" href="Assets/images/logo-modified.png" type="image/x-icon">
     <link rel="stylesheet" href="/Stylesheets/Docs/docs.css">
+    <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -20,13 +23,16 @@
                     <div class="bars"></div>
                     <div class="bars"></div>
                 </div>
-                <div class="image-container">
-                    <img src="/Assets/images/logo.png" alt="logo" class="logo-nav">
+                <div class="brand display-align-center">
+                    <div class="image-container">
+                        <img src="/Assets/images/logo.png" alt="logo" class="logo-nav">
+                    </div>
+                    <h2 class="title">mondayblues</h2>
                 </div>
-                <h2 class="title">mondayblues</h2>
             </div>
             <div class="navbar">
-                <button class="nav-btn solid-secondary"><a href="https://github.com/anushasunil/mondayblues">gitHub</a> </button>
+                <button class="nav-btn solid-secondary"><a href="https://github.com/anushasunil/mondayblues">gitHub</a>
+                </button>
                 <button class="nav-btn solid-primary"><a href="/index.html">Home</a></button>
             </div>
         </nav>
@@ -41,7 +47,8 @@
                         <a href="introduction.html" class="component-name">Introduction</a>
                     </div>
                     <div class="component">
-                        <a href="/Stylesheets/Docs/typography/docs_typography.html" class="component-name">Typography</a>
+                        <a href="/Stylesheets/Docs/typography/docs_typography.html"
+                            class="component-name">Typography</a>
                     </div>
                 </div>
             </div>
@@ -85,7 +92,8 @@
             <div class="component-content display-align-self-flex-start">
                 <h3 class="component-heading">Alert</h3>
                 <p class="about-component">
-                    Alert are used to notify the user about any important information in a short message without interrupting user's work flow.
+                    Alert are used to notify the user about any important information in a short message without
+                    interrupting user's work flow.
                 </p>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -100,17 +108,23 @@
                             <i class="fa-solid fa-xmark clickable-image"></i>
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%253C%21--%2520for%2520Primary%2520Alert%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520primary%2520display-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-content%2520flex-grow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520primary%2520alert.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520clickable-image%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-                        style="width: 611px; height: 380px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+    &lt;div class=&quot;alert-box primary display-align-center&quot;&gt;
+        &lt;div class=&quot;alert-content flex-grow&quot;&gt;
+            &lt;p&gt;This is a primary alert.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;i class=&quot;fa-solid fa-xmark clickable-image&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
                         Success Alert
                     </h3>
-                    <p class="variant-info">- a <i>success</i> themed solid-type alert box can be used to give any success-notification</p>
+                    <p class="variant-info">- a <i>success</i> themed solid-type alert box can be used to give any
+                        success-notification</p>
                     <div class="demo-wrapper">
                         <div class="alert-box success display-align-center display-justify-space-between">
                             <div class="alert-content display-align-center">
@@ -120,17 +134,24 @@
                             <i class="fa-solid fa-xmark clickable-image  icon"></i>
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%253C%21--%2520for%2520Success%2520Alert%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520success%2520display-align-center%2520display-justify-space-between%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-content%2520display-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-circle-check%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522flex-grow%2522%253ETask%2520completed%2520successfully.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520clickable-image%2520%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
-                        style="width: 1024px; height: 380px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+    &lt;div class=&quot;alert-box success display-align-center display-justify-space-between&quot;&gt;
+        &lt;div class=&quot;alert-content display-align-center&quot;&gt;
+            &lt;i class=&quot;fa-solid fa-circle-check icon&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;flex-grow&quot;&gt;Task completed successfully.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;i class=&quot;fa-solid fa-xmark clickable-image  icon&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>         
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
                         Warning Alert
                     </h3>
-                    <p class="variant-info">- a solid-type <i>warning</i> alert box usually warns against any possible error that might occur during the execution of task</p>
+                    <p class="variant-info">- a solid-type <i>warning</i> alert box usually warns against any possible
+                        error that might occur during the execution of task</p>
                     <div class="demo-wrapper">
                         <div class="alert-box warning display-align-center display-justify-space-between">
                             <div class="alert-content display-align-center">
@@ -140,11 +161,17 @@
                             <i class="fa-solid fa-xmark clickable-image  icon"></i>
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%253C%21--%2520for%2520Warning%2520Alert%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520warning%2520display-align-center%2520display-justify-space-between%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-content%2520display-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-triangle-exclamation%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522flex-grow%2522%253EThis%2520may%2520lead%2520to%2520loss%2520of%2520data.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520clickable-image%2520%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253Ess%253D%2522fa-solid%2520fa-xmark%2520clickable-image%2520%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
-                        style="width: 855px; height: 400px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+    &lt;div class=&quot;alert-box warning display-align-center display-justify-space-between&quot;&gt;
+        &lt;div class=&quot;alert-content display-align-center&quot;&gt;
+            &lt;i class=&quot;fa-solid fa-triangle-exclamation icon&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;flex-grow&quot;&gt;This may lead to loss of data.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;i class=&quot;fa-solid fa-xmark clickable-image  icon&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>     
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -160,11 +187,17 @@
                             <i class="fa-solid fa-xmark clickable-image  icon"></i>
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%253C%21--%2520for%2520Error%2520Alert%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520danger%2520display-align-center%2520display-justify-space-between%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-content%2520display-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-circle-exclamation%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EIncorrect%2520credentials.%2520Please%2520enter%2520the%2520valid%2520credentials.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520clickable-image%2520%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-                        style="width: 847px; height: 380px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+&lt;div class=&quot;alert-box danger display-align-center display-justify-space-between&quot;&gt;
+    &lt;div class=&quot;alert-content display-align-center&quot;&gt;
+        &lt;i class=&quot;fa-solid fa-circle-exclamation icon&quot;&gt;&lt;/i&gt;
+        &lt;p class=&quot;flex-grow&quot;&gt;Incorrect credentials. Please enter the valid credentials.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;i class=&quot;fa-solid fa-xmark clickable-image  icon&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
             </div>
         </div>
@@ -173,7 +206,12 @@
         <p class="footer-text">created by <a href="https://github.com/anushasunil/">anushasunil</a> - @neoGcamp</p>
     </footer>
     </div>
+    <script src="/Stylesheets/Docs/docs_nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/Stylesheets/Docs/codeblocks/codeblocks.js"></script>
 </body>
-<script src="/Stylesheets/Docs/docs_nav.js"></script>
 
 </html>

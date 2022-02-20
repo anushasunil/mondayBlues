@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/Stylesheets/Abstract/fontawesome-free-6.0.0-web/css/all.css">
     <link rel="shortcut icon" href="Assets/images/logo-modified.png" type="image/x-icon">
     <link rel="stylesheet" href="/Stylesheets/Docs/docs.css">
+    <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -20,13 +23,16 @@
                     <div class="bars"></div>
                     <div class="bars"></div>
                 </div>
-                <div class="image-container">
-                    <img src="/Assets/images/logo.png" alt="logo" class="logo-nav">
+                <div class="brand display-align-center">
+                    <div class="image-container">
+                        <img src="/Assets/images/logo.png" alt="logo" class="logo-nav">
+                    </div>
+                    <h2 class="title">mondayblues</h2>
                 </div>
-                <h2 class="title">mondayblues</h2>
             </div>
             <div class="navbar">
-                <button class="nav-btn solid-secondary"><a href="https://github.com/anushasunil/mondayblues">gitHub</a> </button>
+                <button class="nav-btn solid-secondary"><a href="https://github.com/anushasunil/mondayblues">gitHub</a>
+                </button>
                 <button class="nav-btn solid-primary"><a href="/index.html">Home</a></button>
             </div>
         </nav>
@@ -91,7 +97,6 @@
                     <h3 class="variant-name">
                         Badge on Avatar - Round
                     </h3>
-                    <!-- <p class="variant-info">- the <i>standard</i> alert box! </p> -->
                     <div class="demo-wrapper for-badge">
                         <div class="avatar-badge-container">
                             <div class="avatar-container circle xsmall">
@@ -118,11 +123,37 @@
                             <div class="badge dnd"></div>
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520circle%2520xsmall%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Fimages%252Favatar2.jpg%2522%2520alt%253D%2522avatar2%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520online%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520circle%2520small%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Fimages%252Favatar2.jpg%2522%2520alt%253D%2522avatar2%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520online%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520circle%2520large%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Fimages%252Favatar2.jpg%2522%2520alt%253D%2522avatar2%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520offline%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520circle%2520xlarge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Fimages%252Favatar2.jpg%2522%2520alt%253D%2522avatar2%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520dnd%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
-                        style="width: 673px; height: 640px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+                        <code class="language-html">
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;avatar-container circle xsmall&quot;&gt;
+        &lt;img src=&quot;/Assets/images/avatar2.jpg&quot; alt=&quot;avatar2&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;badge online&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;avatar-container circle small&quot;&gt;
+        &lt;img src=&quot;/Assets/images/avatar2.jpg&quot; alt=&quot;avatar2&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;badge online&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;avatar-container circle large&quot;&gt;
+        &lt;img src=&quot;/Assets/images/avatar2.jpg&quot; alt=&quot;avatar2&quot;&gt;
+    &lt;/div&gt;
+&lt;div class=&quot;badge offline&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;avatar-container circle xlarge&quot;&gt;
+        &lt;img src=&quot;/Assets/images/avatar2.jpg&quot; alt=&quot;avatar2&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;badge dnd&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -154,11 +185,37 @@
                             <div class="badge online"></div>
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520squircle%2520xsmall%2520display-align-center%2520display-justify-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EAB%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520dnd%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520squircle%2520small%2520display-align-center%2520display-justify-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EAB%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520dnd%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520squircle%2520large%2520display-align-center%2520display-justify-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EAB%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520offline%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2520squircle%2520xlarge%2520display-align-center%2520display-justify-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EAB%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520online%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
-                        style="width: 1000px; height: 670px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+                        <code class="language-html">
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;avatar-container squircle xsmall display-align-center display-justify-center&quot;&gt;
+        &lt;p&gt;AB&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;badge dnd&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;avatar-container squircle small display-align-center display-justify-center&quot;&gt;
+        &lt;p&gt;AB&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;badge dnd&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;avatar-container squircle large display-align-center display-justify-center&quot;&gt;
+        &lt;p&gt;AB&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;badge offline&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;avatar-container squircle xlarge display-align-center display-justify-center&quot;&gt;
+        &lt;p&gt;AB&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;badge online&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -188,16 +245,41 @@
                         <div class="avatar-badge-container">
                             <div class="badge notification display-align-center display-justify-center">10</div>
                             <button class="solid-icon-with-text display-justify-center display-align-center">
-                                <img src="icons/save.svg" alt="">
+                                <img src="/Assets/icons/star.svg" alt="icon">
                                 ICON WITH TEXT
                             </button>
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520notification%2520display-align-center%2520display-justify-center%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522solid-icon-only%2520dark%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522Assets%252Ficons%252Femail.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520notification%2520display-align-center%2520display-justify-center%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522outline-icon-only%2520light%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522Assets%252Ficons%252Fnotifications.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520notification%2520display-align-center%2520display-justify-center%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522solid-secondary%2522%253ESECONDARY%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520notification%2520display-align-center%2520display-justify-center%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522solid-icon-with-text%2520display-justify-center%2520display-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522icons%252Fsave.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520ICON%2520WITH%2520TEXT%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E"
-                        style="width: 909px; height: 633px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+                        <code class="language-html">
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;badge notification display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
+    &lt;button class=&quot;solid-icon-only dark&quot;&gt;
+        &lt;img src=&quot;/Assets/icons/email.svg&quot; alt=&quot;icon&quot;&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;badge notification display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
+    &lt;button class=&quot;outline-icon-only light&quot;&gt;
+        &lt;img src=&quot;/Assets/icons/notifications.svg&quot; alt=&quot;icon&quot;&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;badge notification display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
+    &lt;button class=&quot;solid-secondary&quot;&gt;SECONDARY&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;badge notification display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
+    &lt;button class=&quot;solid-icon-with-text display-justify-center display-align-center&quot;&gt;
+        &lt;img src=&quot;/Assets/icons/save.svg&quot; alt=&quot;icon&quot;&gt;
+        ICON WITH TEXT
+    &lt;/button&gt;
+&lt;/div&gt;
+                        </code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -214,11 +296,19 @@
                             <p>This is a large text badge</p>
                         </div>
                     </div>
-                    <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520notification%2520text%2520display-align-center%2520display-justify-center%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520text%2520badge%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520notification%2520text%2520large%2520display-align-center%2520display-justify-center%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520large%2520text%2520badge%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E"
-                    style="width: 1002px; height: 353px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                  </iframe>
+                    <pre id="myInput">
+                        <code class="language-html">
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;badge notification text display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
+    &lt;p&gt;This is a text badge&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar-badge-container&quot;&gt;
+    &lt;div class=&quot;badge notification text large display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
+    &lt;p&gt;This is a large text badge&lt;/p&gt;
+&lt;/div&gt;
+                        </code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
             </div>
         </div>
@@ -226,7 +316,12 @@
     <footer>
         <p class="footer-text">created by <a href="https://github.com/anushasunil">anushasunil</a> - @neoGcamp</p>
     </footer>
+    <script src="/Stylesheets/Docs/docs_nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/Stylesheets/Docs/codeblocks/codeblocks.js"></script>
 </body>
-<script src="/Stylesheets/Docs/docs_nav.js"></script>
 
 </html>

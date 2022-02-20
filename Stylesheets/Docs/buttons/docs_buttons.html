@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/Stylesheets/Abstract/fontawesome-free-6.0.0-web/css/all.css">
     <link rel="shortcut icon" href="Assets/images/logo-modified.png" type="image/x-icon">
     <link rel="stylesheet" href="/Stylesheets/Docs/docs.css">
+    <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -92,55 +95,95 @@
                     <h3 class="variant-name">
                         Solid Buttons
                     </h3>
-                    <div class="demo-wrapper display-justify-center display for-button">
+                    <div class="demo-wrapper display-justify-center for-button">
                         <button class="solid-primary">PRIMARY</button>
                         <button class="solid-secondary">SECONDARY</button>
                         <button class="solid-icon-only light">
-                            <img src="/Assets/icons/lightmode.svg" alt="">
+                            <img src="/Assets/icons/lightmode.svg" alt="icon">
                         </button>
                         <button class="solid-icon-only dark">
-                            <img src="/Assets/icons/darkmode.svg" alt="">
+                            <img src="/Assets/icons/darkmode.svg" alt="icon">
                         </button>
                         <button class="solid-error">ERROR</button>
                         <button class="solid-success">SUCCESS</button>
-                        <button class="solid-icon-with-text display-justify display-align center">
-                            <img src="Assets/icons/save.svg" alt="">
+                        <button class="solid-icon-with-text display-justify-space-between display-align-center">
+                            <img src="/Assets/icons/save.svg" alt="icon">
                             SAVE
                         </button>
                         <button class="solid-disabled">DISABLED</button>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%250A%2520%2520%253Cbutton%2520class%253D%2522solid-primary%2522%253EPRIMARY%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522solid-secondary%2522%253ESECONDARY%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522solid-icon-only%2520light%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Flightmode.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522solid-icon-only%2520dark%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fdarkmode.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522solid-error%2522%253EERROR%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522solid-success%2522%253ESUCCESS%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522solid-icon-with-text%2520display-justify%2520display-align%2520center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522Assets%252Ficons%252Fsave.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520SAVE%250A%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522solid-disabled%2522%253EDISABLED%253C%252Fbutton%253E"
-                        style="width: 791px; height: 614px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+                        <code class="language-html">
+&lt;button class=&quot;solid-primary&quot;&gt;PRIMARY&lt;/button&gt;
+
+&lt;button class=&quot;solid-secondary&quot;&gt;SECONDARY&lt;/button&gt;
+
+&lt;button class=&quot;solid-icon-only light&quot;&gt;
+    &lt;img src=&quot;/Assets/icons/lightmode.svg&quot; alt=&quot;icon&quot;&gt;
+&lt;/button&gt;
+
+&lt;button class=&quot;solid-icon-only dark&quot;&gt;
+    &lt;img src=&quot;/Assets/icons/darkmode.svg&quot; alt=&quot;icon&quot;&gt;
+&lt;/button&gt;
+
+&lt;button class=&quot;solid-error&quot;&gt;ERROR&lt;/button&gt;
+
+&lt;button class=&quot;solid-success&quot;&gt;SUCCESS&lt;/button&gt;
+
+&lt;button class=&quot;solid-icon-with-text display-justify-space-between display-align-center&quot;&gt;
+    &lt;img src=&quot;Assets/icons/save.svg&quot; alt=&quot;icon&quot;&gt;
+    SAVE
+&lt;/button&gt;
+
+&lt;button class=&quot;solid-disabled&quot;&gt;DISABLED&lt;/button&gt;
+                        </code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>     
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
                         Outline Buttons
                     </h3>
-                    <div class="demo-wrapper display-justify-center display for-button">
+                    <div class="demo-wrapper display-justify-center for-button">
                         <button class="outline-primary">PRIMARY</button>
                         <button class="outline-secondary">SECONDARY</button>
                         <button class="outline-icon-only light">
-                            <img src="/Assets/icons/lightmode.svg" alt="">
+                            <img src="/Assets/icons/lightmode.svg" alt="icon">
                         </button>
                         <button class="outline-icon-only dark">
-                            <img src="/Assets/icons/darkmode.svg" alt="">
+                            <img src="/Assets/icons/darkmode.svg" alt="icon">
                         </button>
                         <button class="outline-error">ERROR</button>
                         <button class="outline-success">SUCCESS</button>
-                        <button class="outline-icon-with-text display-justify display-align center">
-                            <img src="Assets/icons/save.svg" alt="">
+                        <button class="outline-icon-with-text display-justify-space-between display-align-center">
+                            <img src="/Assets/icons/save.svg" alt="icon">
                             SAVE
                         </button>
                         <button class="outline-disabled">DISABLED</button>
                     </div>
-                    <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%250A%2520%2520%253Cbutton%2520class%253D%2522outline-primary%2522%253EPRIMARY%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522outline-secondary%2522%253ESECONDARY%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522outline-icon-only%2520light%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Flightmode.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522outline-icon-only%2520dark%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fdarkmode.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522outline-error%2522%253EERROR%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522outline-success%2522%253ESUCCESS%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522outline-icon-with-text%2520display-justify%2520display-align%2520center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522Assets%252Ficons%252Fsave.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520SAVE%250A%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522outline-disabled%2522%253EDISABLED%253C%252Fbutton%253E"
-                    style="width: 850px; height: 614px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                  </iframe>
+                   <pre id="myInput">
+                       <code class="language-html">
+&lt;button class=&quot;outline-primary&quot;&gt;PRIMARY&lt;/button&gt;
+
+&lt;button class=&quot;outline-secondary&quot;&gt;SECONDARY&lt;/button&gt;
+
+&lt;button class=&quot;outline-icon-only light&quot;&gt;
+    &lt;img src=&quot;/Assets/icons/lightmode.svg&quot; alt=&quot;icon&quot;&gt;
+&lt;/button&gt;
+
+&lt;button class=&quot;outline-icon-only dark&quot;&gt;
+    &lt;img src=&quot;/Assets/icons/darkmode.svg&quot; alt=&quot;icon&quot;&gt;
+&lt;/button&gt;
+
+&lt;button class=&quot;outline-error&quot;&gt;ERROR&lt;/button&gt;
+
+&lt;button class=&quot;outline-success&quot;&gt;SUCCESS&lt;/button&gt;
+
+&lt;button class=&quot;outline-icon-with-text display-justify-space-between display-align-center&quot;&gt;
+    &lt;img src=&quot;/Assets/icons/save.svg&quot; alt=&quot;icon&quot;&gt;
+    SAVE
+&lt;/button&gt;
+                       </code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button> 
+                   </pre>
                 </div>
             </div>
         </div>
@@ -150,12 +193,12 @@
     </footer>
     </div>
 
+    <script src="/Stylesheets/Docs/docs_nav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
         hljs.highlightAll();
     </script>
-    <script src="/Stylesheets/Abstract/highlight_js/highlightjs.js"></script>
+    <script src="/Stylesheets/Docs/codeblocks/codeblocks.js"></script>
 </body>
-<script src="/Stylesheets/Docs/docs_nav.js"></script>
 
 </html>
