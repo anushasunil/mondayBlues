@@ -18,8 +18,9 @@ nav {
 
 }
 
-.heading {
+.heading, .brand {
     gap: 1%;
+    flex-wrap: nowrap;
 }
 
 h1.title {
@@ -46,15 +47,17 @@ h1.title {
 }
 
 .heading .image-container {
-    width:15%;
+    width:10%;
+    max-width: 5rem;
+    min-width:3rem;
 }
 
 .logo, .heading .logo-nav, .image-container {
     margin: 0;
 }
 
-.logo {
-    width: 100%;
+.nav .image-container {
+    width: 5%;
 }
 
 /* main-container */
@@ -179,7 +182,6 @@ aside::-webkit-scrollbar {
 .demo-wrapper {
     padding: 1rem;
     margin:0 auto;
-    /* background-color: var(--color-white); */
     border:1px solid rgba(128, 128, 128, 0.349);
     border-radius: var(--container-border);
 }
@@ -191,6 +193,7 @@ aside::-webkit-scrollbar {
 .for-badge {
     display: grid; 
     justify-content: center;
+    border: none;
     grid-template-columns: 100px 150px 200px 250px;
     align-items: center;
     justify-items: center;
@@ -248,9 +251,17 @@ footer a:hover {
 
 }
 
-@media (max-width:650px) {
+@media (max-width:680px) {
+    .snackbars.leading, .snackbars.baseline {
+        gap: 0;
+    }
+    
     html {
         font-size: 14px;
+    }
+
+    .grid-container {
+        width:100%;
     }
 
     .nav-btn {
@@ -261,20 +272,6 @@ footer a:hover {
         width: 90%;
     }
 
-}
-
-
-@media (max-width:480px) {
-    .main-container {
-        width:100%;
-    }
-
-    .component-heading {
-        margin: 0 1rem;
-    }
-}
-
-@media (max-width:420px) {
     nav.display-align-center.display-justify-space-between {
         align-items: flex-start;
         flex-direction: column;
@@ -284,4 +281,22 @@ footer a:hover {
         align-self: end;
     }
 
+}
+
+
+@media (max-width:480px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    .component-heading {
+        margin: 0 1rem;
+    }
+
+     footer.for-grid {
+        position: sticky;
+    }
+
+   
 }

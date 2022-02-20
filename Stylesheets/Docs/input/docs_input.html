@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/Stylesheets/Abstract/fontawesome-free-6.0.0-web/css/all.css">
     <link rel="shortcut icon" href="Assets/images/logo-modified.png" type="image/x-icon">
     <link rel="stylesheet" href="/Stylesheets/Docs/docs.css">
+    <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -108,11 +111,25 @@
                             <small class="character-count functional display-align-self-flex-end">0/20<i></i></small>
                         </div>
                     </div>
-                    <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522char-count-check%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522char-count%2522%253ECharacter%2520Count%253C%252Flabel%253E%250A%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520class%253D%2522trailing-icon-control%2522%2520name%253D%2522icon-position%2522%2520disabled%253E%250A%2520%2520%253Clabel%2520for%253D%2522trailing-icon%2522%2520class%253D%2522disabled%2522%253ETrailing%2520Icon%253C%252Flabel%253E%250A%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520class%253D%2522leading-icon-control%2522%2520name%253D%2522icon-position%2522%2520disabled%253E%250A%2520%2520%253Clabel%2520for%253D%2522leading-icon%2522%2520class%253D%2522disabled%2522%253ELeading%2520Icon%253C%252Flabel%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522input-box%2520display-flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-icon-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520placeholder%253D%2522Enter%2520your%2520password%2522%2520class%253D%2522flex-grow%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522character-count%2520functional%2520display-align-self-flex-end%2522%253E0%252F20%253Ci%253E%253C%252Fi%253E%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E"
-                    style="width: 951px; height: 465px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                  </iframe>
+                   <pre id="myInput">
+<code class="language-html">
+&lt;input type=&quot;checkbox&quot; class=&quot;char-count-check&quot;&gt;
+&lt;label for=&quot;char-count&quot;&gt;Character Count&lt;/label&gt;
+
+&lt;input type=&quot;radio&quot; class=&quot;trailing-icon-control&quot; name=&quot;icon-position&quot; disabled&gt;
+&lt;label for=&quot;trailing-icon&quot; class=&quot;disabled&quot;&gt;Trailing Icon&lt;/label&gt;
+
+&lt;input type=&quot;radio&quot; class=&quot;leading-icon-control&quot; name=&quot;icon-position&quot; disabled&gt;
+&lt;label for=&quot;leading-icon&quot; class=&quot;disabled&quot;&gt;Leading Icon&lt;/label&gt;
+
+&lt;div class=&quot;input-box display-flex-column&quot;&gt;
+    &lt;div class=&quot;input-icon-container&quot;&gt;
+        &lt;input type=&quot;password&quot; placeholder=&quot;Enter your password&quot; class=&quot;flex-grow&quot;&gt;
+    &lt;/div&gt;
+    &lt;small class=&quot;character-count functional display-align-self-flex-end&quot;&gt;0/20&lt;i&gt;&lt;/i&gt;&lt;/small&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                   </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -141,14 +158,32 @@
                                 <small
                                     class="character-count functional display-align-self-flex-end">0/20<i></i></small>
                             </div>
-
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522char-count-check%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522char-count%2522%253ECharacter%2520Count%253C%252Flabel%253E%250A%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520class%253D%2522trailing-icon-control%2522%2520name%253D%2522icon-position%2522%2520checked%253E%250A%2520%2520%253Clabel%2520for%253D%2522trailing-icon%2522%253ETrailing%2520Icon%253C%252Flabel%253E%250A%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520class%253D%2522leading-icon-control%2522%2520name%253D%2522icon-position%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522leading-icon%2522%2520%253ELeading%2520Icon%253C%252Flabel%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522input-box%2520display-flex-column%2520with-helper-msg%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-icon-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520password%2522%2520class%253D%2522flex-grow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fvisible.svg%2522%2520alt%253D%2522%2522%2520class%253D%2522clickable-image%2520img-functional%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522helper-text-container%2520display-justify-space-between%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522helper-text%2522%253E%253Ci%253EPassword%2520must%2520contain%2520a%2520special%2520character%2520and%2520a%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520number%253C%252Fi%253E%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522character-count%2520functional%2520display-align-self-flex-end%2522%253E0%252F20%253Ci%253E%253C%252Fi%253E%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
-                        style="width: 943px; height: 580px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+&lt;input type=&quot;checkbox&quot; class=&quot;char-count-check&quot;&gt;
+&lt;label for=&quot;char-count&quot;&gt;Character Count&lt;/label&gt;
+
+&lt;input type=&quot;radio&quot; class=&quot;trailing-icon-control&quot; name=&quot;icon-position&quot; checked&gt;
+&lt;label for=&quot;trailing-icon&quot;&gt;Trailing Icon&lt;/label&gt;
+
+&lt;input type=&quot;radio&quot; class=&quot;leading-icon-control&quot; name=&quot;icon-position&quot;&gt;
+&lt;label for=&quot;leading-icon&quot;&gt;Leading Icon&lt;/label&gt;
+&lt;div class=&quot;input-box display-flex-column with-helper-msg&quot;&gt;
+    &lt;div class=&quot;input-icon-container&quot;&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Enter your password&quot; class=&quot;flex-grow&quot;&gt;
+        &lt;img src=&quot;/Assets/icons/visible.svg&quot; alt=&quot;&quot; class=&quot;clickable-image img-functional&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;helper-text-container display-justify-space-between&quot;&gt;
+        &lt;small class=&quot;helper-text&quot;&gt;&lt;i&gt;Password must contain a special character and a
+                number&lt;/i&gt;&lt;/small&gt;
+        &lt;small
+            class=&quot;character-count functional display-align-self-flex-end&quot;&gt;0/20&lt;i&gt;&lt;/i&gt;&lt;/small&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -160,11 +195,13 @@
                             <textarea placeholder="Enter your address"></textarea>
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-box%2520display-flex-column%2522%253E%250A%2520%2520%2520%2520%253Ctextarea%2520placeholder%253D%2522Enter%2520your%2520address%2522%253E%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E"
-                        style="width: 722px; height: 225px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+&lt;div class=&quot;input-box display-flex-column&quot;&gt;
+    &lt;textarea placeholder=&quot;Enter your address&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -177,11 +214,14 @@
                             <small><i>*Please enter a valid email address</i></small>
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-box%2520display-flex-column%2520error%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520placeholder%253D%2522Enter%2520your%2520email%2520address%2522%253E%250A%2520%2520%2520%2520%253Csmall%253E%253Ci%253E*Please%2520enter%2520a%2520valid%2520email%2520address%253C%252Fi%253E%253C%252Fsmall%253E%250A%253C%252Fdiv%253E"
-                        style="width: 664px; height: 283px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+&lt;div class=&quot;input-box display-flex-column error&quot;&gt;
+    &lt;input type=&quot;email&quot; placeholder=&quot;Enter your email address&quot;&gt;
+    &lt;small&gt;&lt;i&gt;*Please enter a valid email address&lt;/i&gt;&lt;/small&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -194,11 +234,14 @@
                             <small class="character-count display-align-self-flex-end">0/20<i></i></small>
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522input-box%2520display-flex-column%2520with-character-counter%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520placeholder%253D%2522Enter%2520your%2520email%2520address%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522character-count%2520display-align-self-flex-end%2522%253E0%252F20%253Ci%253E%253C%252Fi%253E%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E"
-                        style="width: 841px; height: 283px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+&lt;div class=&quot;input-box display-flex-column with-character-counter&quot;&gt;
+    &lt;input type=&quot;email&quot; placeholder=&quot;Enter your email address&quot;&gt;
+    &lt;small class=&quot;character-count display-align-self-flex-end&quot;&gt;0/20&lt;i&gt;&lt;/i&gt;&lt;/small&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -215,11 +258,16 @@
                             </div>
                         </div>
                     </div>
-                    <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522input-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-icon-container%2520trailing-icon%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520placeholder%253D%2522Enter%2520your%2520password%2522%2520class%253D%2522flex-grow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fvisible.svg%2522%2520alt%253D%2522visibility%2522%2520class%253D%2522clickable-image%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
-                    style="width: 892px; height: 335px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                  </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+&lt;div class=&quot;input-box&quot;&gt;
+    &lt;div class=&quot;input-icon-container trailing-icon&quot;&gt;
+        &lt;input type=&quot;password&quot; placeholder=&quot;Enter your password&quot; class=&quot;flex-grow&quot;&gt;
+        &lt;img src=&quot;/Assets/icons/visible.svg&quot; alt=&quot;visibility&quot; class=&quot;clickable-image&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -228,17 +276,22 @@
                     <p class="variant-info">- Inputbox with an image icon, positioned at the start</p>
                     <div class="demo-wrapper for-inputs">
                         <div class="input-box">
-                            <div class="input-icon-container">
+                            <div class="input-icon-container leading-icon">
                                 <img src="/Assets/icons/visible.svg" alt="visibility" class="clickable-image">
                                 <input type="password" placeholder="Enter your password" class="flex-grow">
                             </div>
                         </div>
                     </div>
-                    <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522input-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-icon-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Ficons%252Fvisible.svg%2522%2520alt%253D%2522visibility%2522%2520class%253D%2522clickable-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520placeholder%253D%2522Enter%2520your%2520password%2522%2520class%253D%2522flex-grow%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E"
-                    style="width: 892px; height: 298px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                  </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+&lt;div class=&quot;input-box&quot;&gt;
+    &lt;div class=&quot;input-icon-container leading-icon&quot;&gt;
+        &lt;img src=&quot;/Assets/icons/visible.svg&quot; alt=&quot;visibility&quot; class=&quot;clickable-image&quot;&gt;
+        &lt;input type=&quot;password&quot; placeholder=&quot;Enter your password&quot; class=&quot;flex-grow&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
             </div>
         </div>
@@ -248,7 +301,12 @@
         <p class="footer-text">created by <a href="https://github.com/anushasunil">anushasunil</a> - @neoGcamp</p>
     </footer>
     </div>
+    <script src="/Stylesheets/Docs/docs_nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/Stylesheets/Docs/codeblocks/codeblocks.js"></script>
 </body>
-<script src="/Stylesheets/Docs/docs_nav.js"></script>
 
 </html>

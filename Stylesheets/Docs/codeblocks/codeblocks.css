@@ -1,0 +1,30 @@
+pre {
+    position: relative;
+}
+
+code {
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+.snippet-btn {
+    background-color: transparent;
+    box-shadow: none;
+    position: absolute;
+    cursor: pointer;
+    top: 1.5rem;
+    right: 1rem;
+}
+
+.snippet-btn:hover {
+    box-shadow: none;
+}
+
+.snippet-btn>i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.snippet-btn:active {
+    transform: scale(0.9);
+}

@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="Assets/images/logo-modified.png" type="image/x-icon">
     <link rel="stylesheet" href="/Stylesheets/Abstract/fontawesome-free-6.0.0-web/css/all.css">
     <link rel="stylesheet" href="/Stylesheets/Docs/docs.css">
+    <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -96,11 +99,14 @@
                             <img src="/Assets/images/image1.jpg" alt="image1">
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522image-container%2520square%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Fimages%252Fimage1.jpg%2522%2520alt%253D%2522image1%2522%253E%250A%2520%2520%2520%253C%252Fdiv%253E"
-                        style="width: 1024px; height: 253px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                   <pre id="myInput">
+<code class="language-html">
+&lt;div class=&quot;image-container square&quot;&gt;
+    &lt;img src=&quot;/Assets/images/image1.jpg&quot; alt=&quot;image1&quot;&gt;
+&lt;/div&gt;
+
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                   </pre>
                 </div>
                 <div class="variant-box">
                     <h3 class="variant-name">
@@ -111,11 +117,14 @@
                             <img src="/Assets/images/image1.jpg" alt="image1">
                         </div>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=1034&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522image-container%2520circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Fimages%252Fimage1.jpg%2522%2520alt%253D%2522image1%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
-                        style="width: 639px; height: 242px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+&lt;div class=&quot;image-container circle&quot;&gt;
+    &lt;img src=&quot;/Assets/images/image1.jpg&quot; alt=&quot;image1&quot;&gt;
+&lt;/div&gt;
+     
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                   </pre>
                 </div>
             </div>
         </div>
@@ -123,7 +132,11 @@
     <footer>
         <p class="footer-text">created by <a href="https://github.com/anushasunil">anushasunil</a> - @neoGcamp</p>
     </footer>
+    <script src="/Stylesheets/Docs/docs_nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/Stylesheets/Docs/codeblocks/codeblocks.js"></script>
 </body>
-<script src="/Stylesheets/Docs/docs_nav.js"></script>
-
 </html>

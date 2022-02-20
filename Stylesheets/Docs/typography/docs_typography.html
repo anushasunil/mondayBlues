@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/Stylesheets/Abstract/fontawesome-free-6.0.0-web/css/all.css">
     <link rel="stylesheet" href="/Stylesheets/Docs/docs.css">
     <link rel="shortcut icon" href="Assets/images/logo-modified.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -26,7 +29,8 @@
                 <h2 class="title">mondayblues</h2>
             </div>
             <div class="navbar">
-                <button class="nav-btn solid-secondary"><a href="https://github.com/anushasunil/mondayblues">gitHub</a> </button>
+                <button class="nav-btn solid-secondary"><a href="https://github.com/anushasunil/mondayblues">gitHub</a>
+                </button>
                 <button class="nav-btn solid-primary"><a href="/index.html">Home</a></button>
             </div>
         </nav>
@@ -41,7 +45,8 @@
                         <a href="introduction.html" class="component-name">Introduction</a>
                     </div>
                     <div class="component">
-                        <a href="/Stylesheets/Docs/typography/docs_typography.html" class="component-name">Typography</a>
+                        <a href="/Stylesheets/Docs/typography/docs_typography.html"
+                            class="component-name">Typography</a>
                     </div>
                 </div>
             </div>
@@ -101,11 +106,16 @@
                         <h5>This is a heading from &lt;h5&gt; tag</h5>
                         <h6>This is a heading from &lt;h6&gt; tag</h6>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=538&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253EThis%2520is%2520a%2520heading%2520from%2520%2526lt%253Bh1%2526gt%253B%2520tag%253C%252Fh1%253E%250A%253Ch2%253EThis%2520is%2520a%2520heading%2520from%2520%2526lt%253Bh2%2526gt%253B%2520tag%253C%252Fh2%253E%250A%253Ch3%253EThis%2520is%2520a%2520heading%2520from%2520%2526lt%253Bh3%2526gt%253B%2520tag%253C%252Fh3%253E%250A%253Ch4%253EThis%2520is%2520a%2520heading%2520from%2520%2526lt%253Bh4%2526gt%253B%2520tag%253C%252Fh4%253E%250A%253Ch5%253EThis%2520is%2520a%2520heading%2520from%2520%2526lt%253Bh5%2526gt%253B%2520tag%253C%252Fh5%253E%250A%253Ch6%253EThis%2520is%2520a%2520heading%2520from%2520%2526lt%253Bh6%2526gt%253B%2520tag%253C%252Fh6%253E%250A"
-                        style="width: 521px; height: 299px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+    &lt;h1&gt;This is a heading from &lt;h1&gt; tag&lt;/h1&gt;
+    &lt;h2&gt;This is a heading from &lt;h2&gt; tag&lt;/h2&gt;
+    &lt;h3&gt;This is a heading from &lt;h3&gt; tag&lt;/h3&gt;
+    &lt;h4&gt;This is a heading from &lt;h4&gt; tag&lt;/h4&gt;
+    &lt;h5&gt;This is a heading from &lt;h5&gt; tag&lt;/h5&gt;
+    &lt;h6&gt;This is a heading from &lt;h6&gt; tag&lt;/h6&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
                 <div class="variant-box">
                     <h4 class="variant-name">
@@ -114,11 +124,12 @@
                     <div class="demo-wrapper display-justify-center">
                         <p>This is a paragraph text</p>
                     </div>
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=538&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%253EThis%2520is%2520a%2520paragraph%2520text%253C%252Fp%253E%250A"
-                        style="width:495px; height: 206px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                    <pre id="myInput">
+<code class="language-html">
+    &lt;p&gt;This is a paragraph text&lt;/p&gt;
+
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                    </pre>
                 </div>
             </div>
             <div class="variant-box">
@@ -128,11 +139,12 @@
                 <div class="demo-wrapper display-justify-center">
                     <label>This is a light light label</label>
                 </div>
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=538&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Clabel%253EThis%2520is%2520a%2520light%2520light%2520label%253C%252Flabel%253E%250A"
-                    style="width: 595px; height: 206px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <pre id="myInput">
+<code class="language-html">
+    &lt;label&gt;This is a light light label&lt;/label&gt;
+    
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                </pre>
             </div>
             <div class="variant-box">
                 <h4 class="variant-name">
@@ -141,11 +153,12 @@
                 <div class="demo-wrapper display-justify-center">
                     <p class="disabled bold">This is a disabled text</p>
                 </div>
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=538&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cp%2520class%253D%2522disabled%2520bold%2522%253EThis%2520is%2520a%2520disabled%2520text%253C%252Fp%253E%250A"
-                    style="width: 680px; height: 206px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <pre id="myInput">
+<code class="language-html">
+    &lt;p class=&quot;disabled bold&quot;&gt;This is a disabled text&lt;/p&gt;
+
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                </pre>
             </div>
             <div class="variant-box">
                 <h4 class="variant-name">
@@ -157,11 +170,18 @@
                     <p class="semi-bold">This text is of font-weight 600</p>
                     <p class="bold">This text is of font-weight 700</p>
                 </div>
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=538&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522light%2522%253EThis%2520text%2520is%2520of%2520font-weight%2520300%253C%252Fp%253E%250A%253Cp%2520class%253D%2522regular%2522%253EThis%2520text%2520is%2520of%2520font-weight%2520500%253C%252Fp%253E%250A%253Cp%2520class%253D%2522semi-bold%2522%253EThis%2520text%2520is%2520of%2520font-weight%2520600%253C%252Fp%253E%250A%253Cp%2520class%253D%2522bold%2522%253EThis%2520text%2520is%2520of%2520font-weight%2520700%253C%252Fp%253E%250A"
-                    style="width: 722px; height: 279px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                 <pre id="myInput">
+<code class="language-html">
+    &lt;p class=&quot;light&quot;&gt;This text is of font-weight 300&lt;/p&gt;
+
+    &lt;p class=&quot;regular&quot;&gt;This text is of font-weight 500&lt;/p&gt;
+
+    &lt;p class=&quot;semi-bold&quot;&gt;This text is of font-weight 600&lt;/p&gt;
+    
+    &lt;p class=&quot;bold&quot;&gt;This text is of font-weight 700&lt;/p&gt;
+    
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                </pre>
             </div>
         </div>
     </div>
@@ -169,7 +189,13 @@
         <p class="footer-text">created by <a href="https://github.com/anushasunil">anushasunil</a> - @neoGcamp</p>
     </footer>
     </div>
+    <script src="/Stylesheets/Docs/docs_nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/Stylesheets/Docs/codeblocks/codeblocks.js"></script>
 </body>
-<script src="/Stylesheets/Docs/docs_nav.js"></script>
+
 
 </html>
