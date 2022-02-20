@@ -46,6 +46,11 @@ body {
     justify-content: space-evenly;
 }
 
+.display-justify-space-around {
+    display:flex;
+    justify-content: space-around;
+}
+
 .display-justify-center {
     display:flex;
     justify-content: center;

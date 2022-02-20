@@ -9,6 +9,7 @@
 .main-container {
     align-self: center;
     margin-bottom: 5rem;
+    margin-top: 3rem;
 }
 
 .actions {
@@ -34,10 +35,6 @@ h1 {
 
 .logo, .logo-nav, .image-container {
     margin: 0;
-}
-
-.logo {
-    width: 100%;
 }
 
 .logo-nav {

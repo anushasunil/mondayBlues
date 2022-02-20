@@ -18,6 +18,10 @@ nav {
 
 }
 
+.heading {
+    gap: 1%;
+}
+
 h1.title {
     font-size: 200%;
     padding: 10px 0;
@@ -41,8 +45,16 @@ h1.title {
     font-size: 110%;
 }
 
+.heading .image-container {
+    width:15%;
+}
+
+.logo, .heading .logo-nav, .image-container {
+    margin: 0;
+}
+
 .logo {
-    width:2rem;
+    width: 100%;
 }
 
 /* main-container */
