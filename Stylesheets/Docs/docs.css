@@ -67,6 +67,10 @@ h1.title {
     margin: 0 auto;
 }
 
+.actions {
+    gap:1rem;
+}
+
 /* aside background */
 
 .aside-film {
@@ -255,7 +259,7 @@ footer a:hover {
     .snackbars.leading, .snackbars.baseline {
         gap: 0;
     }
-    
+
     html {
         font-size: 14px;
     }

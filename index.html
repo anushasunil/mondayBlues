@@ -7,21 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MondayBlues</title>
     <link rel="stylesheet" href="Stylesheets/Docs/landing.css">
+    <link rel="stylesheet" href="/Stylesheets/Abstract/fontawesome-free-6.0.0-web/css/all.css">
     <link rel="shortcut icon" href="Assets/images/logo-modified.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
+        rel="stylesheet" />
 </head>
 
 <body>
     <div class="page-content">
         <nav class="display-align-center display-justify-space-between">
             <div class="heading display-align-center">
-                <img src="Assets/images/logo.png" alt="logo" class="logo-nav">
-                <h1 class="title">mondayblues</h1>
+                <div class="hamburger-nav clickable-image">
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                </div>
+                <div class="image-container">
+                    <img src="/Assets/images/logo.png" alt="logo" class="logo-nav">
+                </div>
+                <h2 class="title">mondayblues</h2>
             </div>
-            <div class="navbar ">
-                <button class="nav-btn solid-secondary"><a href="https://github.com/anushasunil/mondayBlues">gitHub</a>
-                </button>
-                <button class="nav-btn solid-primary"><a
-                        href="/Stylesheets/Docs/introduction/introduction.html">Docs</a></button>
+            <div class="navbar">
+                <button class="nav-btn solid-secondary"><a href="https://github.com/anushasunil/mondayblues">gitHub</a> </button>
+                <button class="nav-btn solid-primary"><a href="/index.html">Home</a></button>
             </div>
         </nav>
         <div class="main-container">
@@ -36,11 +45,12 @@
             <p class="text-align-center tertiary-heading">Import the below <span class="highlight semi-bold">.css</span>
                 in your project and get started with our
                 components!</p>
-                <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28250%2C248%2C242%2C1%29&t=night-owl&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2540import%2520url%28https%253A%252F%252Fmondayblues.netlify.app%252Fstylesheets%252Fmain.css%29%253B%250A"
-                style="width: 789px; height: 226px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-              </iframe>
+                <pre id="myInput">
+                    <code class="language-html">
+        @import url(https://mondayblues.netlify.app/stylesheets/main.css);
+                    
+                    </code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                </pre>
             <div class="actions display-justify-center">
                 <button class="solid-primary">
                     <a href="/Stylesheets/Docs/introduction/introduction.html">
@@ -56,6 +66,11 @@
             <p class="footer-text">created by <a href="https://github.com/anushasunil">anushasunil</a> - @neoGcamp</p>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/Stylesheets/Docs/codeblocks/codeblocks.js"></script>
 </body>
 
 </html>
