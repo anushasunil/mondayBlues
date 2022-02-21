@@ -248,6 +248,12 @@ footer a:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 1200px) {
+    .snackbars.baseline {
+        gap: 0;
+    }
+}
+
 @media (max-width:960px) {
     .main-container {
         width:80%;
