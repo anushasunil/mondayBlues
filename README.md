@@ -1,6 +1,7 @@
 # [MondayBlues](https://mondayblues.netlify.app/) 
 
 - A basic **component library** that will help you to build beautiful websites.
+- The aim of **mondayblues** is to provide some pre-designed components which you can use it in your projects right away with the help of utility classes by importing our css file in your css file!
 <hr>
 
 ### Usage
