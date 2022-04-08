@@ -23,11 +23,12 @@
     --text-size-xlarge: 3.5rem;
 
     /* box-shadow */
+    --mild-box-shadow: 0 0 4px -1px grey;
     --button-shadow:  0 0 5px 1px rgba(0, 0, 0, 0.39);
     --button-shadow-hover:  0 0 5px 1px rgba(0, 0, 0, 0.623);
     --icon-shadow: 0 5px 10px 1px grey;
     --badge-shadow: 2px 3px 5px -1px rgba(128, 128, 128, 0.876);
-    --card-box-shadow: 0 0 20px -1px rgba(128, 128, 128, 0.39);
+    --medium-box-shadow: 0 0 20px -1px rgba(128, 128, 128, 0.39);
     --snackbar-shadow: 0 0 8px rgb(78, 73, 73);
 }
 
@@ -99,4 +100,13 @@ body {
     bottom:0;
     left:0;
     right:0;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-gray);
+    border-radius: 1rem;
 }
