@@ -10,8 +10,7 @@
     <link rel="shortcut icon" href="/Assets/images/logo-modified.png" type="image/x-icon">
     <link rel="stylesheet" href="/Stylesheets/Docs/docs.css">
     <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
-        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/base16/humanoid-dark.min.css" integrity="sha512-VpzmzXvIXjYfKE4xjvTjF41gt15bbXf3u0CDWXDm105TA7yphqLSVqAc+gnpJswiS068uRYqiXCC4MvCycjQhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -45,7 +44,7 @@
                 <div class="aside-list">
                     <ul class="component-redirect">
                         <li class="component">
-                            <a href="introduction.html" class="component-name">Introduction</a>
+                            <a href="/Stylesheets/Docs/introduction/introduction.html" class="component-name">Introduction</a>
                         </li>
                         <li class="component">
                             <a href="/Stylesheets/Docs/typography/docs_typography.html" class="component-name">Typography</a>
@@ -89,6 +88,9 @@
                     <li class="component">
                         <a href="/Stylesheets/Docs/navigation/docs_navigation.html" class="component-name">Navigation</a>
                     </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/list/docs_list.html" class="component-name">Lists</a>
+                    </li>
                 </ul>
             </div>
         </aside>
@@ -130,33 +132,33 @@
                     </div>
                     <pre id="myInput">
                         <code class="language-html">
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;avatar-container circle xsmall&quot;&gt;
-        &lt;img src=&quot;/Assets/images/avatar2.jpg&quot; alt=&quot;avatar2&quot;&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;avatar-container circle xsmall&quot;&gt;
+            &lt;img src=&quot;/Assets/images/avatar2.jpg&quot; alt=&quot;avatar2&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;badge online&quot;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;badge online&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;avatar-container circle small&quot;&gt;
-        &lt;img src=&quot;/Assets/images/avatar2.jpg&quot; alt=&quot;avatar2&quot;&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;avatar-container circle small&quot;&gt;
+            &lt;img src=&quot;/Assets/images/avatar2.jpg&quot; alt=&quot;avatar2&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;badge online&quot;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;badge online&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;avatar-container circle large&quot;&gt;
-        &lt;img src=&quot;/Assets/images/avatar2.jpg&quot; alt=&quot;avatar2&quot;&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;avatar-container circle large&quot;&gt;
+            &lt;img src=&quot;/Assets/images/avatar2.jpg&quot; alt=&quot;avatar2&quot;&gt;
+        &lt;/div&gt;
+    &lt;div class=&quot;badge offline&quot;&gt;&lt;/div&gt;
     &lt;/div&gt;
-&lt;div class=&quot;badge offline&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;avatar-container circle xlarge&quot;&gt;
-        &lt;img src=&quot;/Assets/images/avatar2.jpg&quot; alt=&quot;avatar2&quot;&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;avatar-container circle xlarge&quot;&gt;
+            &lt;img src=&quot;/Assets/images/avatar2.jpg&quot; alt=&quot;avatar2&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;badge dnd&quot;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;badge dnd&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
 </code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
                     </pre>
                 </div>
@@ -192,33 +194,33 @@
                     </div>
                     <pre id="myInput">
                         <code class="language-html">
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;avatar-container squircle xsmall display-align-center display-justify-center&quot;&gt;
-        &lt;p&gt;AB&lt;/p&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;avatar-container squircle xsmall display-align-center display-justify-center&quot;&gt;
+            &lt;p&gt;AB&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;badge dnd&quot;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;badge dnd&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;avatar-container squircle small display-align-center display-justify-center&quot;&gt;
-        &lt;p&gt;AB&lt;/p&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;avatar-container squircle small display-align-center display-justify-center&quot;&gt;
+            &lt;p&gt;AB&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;badge dnd&quot;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;badge dnd&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;avatar-container squircle large display-align-center display-justify-center&quot;&gt;
-        &lt;p&gt;AB&lt;/p&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;avatar-container squircle large display-align-center display-justify-center&quot;&gt;
+            &lt;p&gt;AB&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;badge offline&quot;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;badge offline&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;avatar-container squircle xlarge display-align-center display-justify-center&quot;&gt;
-        &lt;p&gt;AB&lt;/p&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;avatar-container squircle xlarge display-align-center display-justify-center&quot;&gt;
+            &lt;p&gt;AB&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;badge online&quot;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;badge online&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
 </code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
                     </pre>
                 </div>
@@ -257,32 +259,32 @@
                     </div>
                     <pre id="myInput">
                         <code class="language-html">
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;badge notification display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
-    &lt;button class=&quot;solid-icon-only dark&quot;&gt;
-        &lt;img src=&quot;/Assets/icons/email.svg&quot; alt=&quot;icon&quot;&gt;
-    &lt;/button&gt;
-&lt;/div&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;badge notification display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
+        &lt;button class=&quot;solid-icon-only dark&quot;&gt;
+            &lt;img src=&quot;/Assets/icons/email.svg&quot; alt=&quot;icon&quot;&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
 
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;badge notification display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
-    &lt;button class=&quot;outline-icon-only light&quot;&gt;
-        &lt;img src=&quot;/Assets/icons/notifications.svg&quot; alt=&quot;icon&quot;&gt;
-    &lt;/button&gt;
-&lt;/div&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;badge notification display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
+        &lt;button class=&quot;outline-icon-only light&quot;&gt;
+            &lt;img src=&quot;/Assets/icons/notifications.svg&quot; alt=&quot;icon&quot;&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
 
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;badge notification display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
-    &lt;button class=&quot;solid-secondary&quot;&gt;SECONDARY&lt;/button&gt;
-&lt;/div&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;badge notification display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
+        &lt;button class=&quot;solid-secondary&quot;&gt;SECONDARY&lt;/button&gt;
+    &lt;/div&gt;
 
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;badge notification display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
-    &lt;button class=&quot;solid-icon-with-text display-justify-center display-align-center&quot;&gt;
-        &lt;img src=&quot;/Assets/icons/save.svg&quot; alt=&quot;icon&quot;&gt;
-        ICON WITH TEXT
-    &lt;/button&gt;
-&lt;/div&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;badge notification display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
+        &lt;button class=&quot;solid-icon-with-text display-justify-center display-align-center&quot;&gt;
+            &lt;img src=&quot;/Assets/icons/save.svg&quot; alt=&quot;icon&quot;&gt;
+            ICON WITH TEXT
+        &lt;/button&gt;
+    &lt;/div&gt;
                         </code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
                     </pre>
                 </div>
@@ -303,15 +305,15 @@
                     </div>
                     <pre id="myInput">
                         <code class="language-html">
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;badge notification text display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
-    &lt;p&gt;This is a text badge&lt;/p&gt;
-&lt;/div&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;badge notification text display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
+        &lt;p&gt;This is a text badge&lt;/p&gt;
+    &lt;/div&gt;
 
-&lt;div class=&quot;avatar-badge-container&quot;&gt;
-    &lt;div class=&quot;badge notification text large display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
-    &lt;p&gt;This is a large text badge&lt;/p&gt;
-&lt;/div&gt;
+    &lt;div class=&quot;avatar-badge-container&quot;&gt;
+        &lt;div class=&quot;badge notification text large display-align-center display-justify-center&quot;&gt;10&lt;/div&gt;
+        &lt;p&gt;This is a large text badge&lt;/p&gt;
+    &lt;/div&gt;
                         </code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
                     </pre>
                 </div>

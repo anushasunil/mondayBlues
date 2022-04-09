@@ -10,8 +10,7 @@
     <link rel="shortcut icon" href="/Assets/images/logo-modified.png" type="image/x-icon">
     <link rel="stylesheet" href="/Stylesheets/Docs/docs.css">
     <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
-        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/base16/humanoid-dark.min.css" integrity="sha512-VpzmzXvIXjYfKE4xjvTjF41gt15bbXf3u0CDWXDm105TA7yphqLSVqAc+gnpJswiS068uRYqiXCC4MvCycjQhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -42,7 +41,7 @@
             <div class="aside-list">
                 <ul class="component-redirect">
                     <li class="component">
-                        <a href="introduction.html" class="component-name">Introduction</a>
+                        <a href="/Stylesheets/Docs/introduction/introduction.html" class="component-name">Introduction</a>
                     </li>
                     <li class="component">
                         <a href="/Stylesheets/Docs/typography/docs_typography.html" class="component-name">Typography</a>
@@ -85,6 +84,9 @@
                     <li class="component">
                         <a href="/Stylesheets/Docs/navigation/docs_navigation.html" class="component-name">Navigation</a>
                     </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/list/docs_list.html" class="component-name">Lists</a>
+                    </li>
                 </ul>
             </div>
         </aside>
@@ -117,21 +119,21 @@
                     </div>
                     <pre id="myInput">
 <code class="language-html">
-&lt;input type=&quot;checkbox&quot; class=&quot;char-count-check&quot;&gt;
-&lt;label for=&quot;char-count&quot;&gt;Character Count&lt;/label&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;char-count-check&quot;&gt;
+    &lt;label for=&quot;char-count&quot;&gt;Character Count&lt;/label&gt;
 
-&lt;input type=&quot;radio&quot; class=&quot;trailing-icon-control&quot; name=&quot;icon-position&quot; disabled&gt;
-&lt;label for=&quot;trailing-icon&quot; class=&quot;disabled&quot;&gt;Trailing Icon&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;trailing-icon-control&quot; name=&quot;icon-position&quot; disabled&gt;
+    &lt;label for=&quot;trailing-icon&quot; class=&quot;disabled&quot;&gt;Trailing Icon&lt;/label&gt;
 
-&lt;input type=&quot;radio&quot; class=&quot;leading-icon-control&quot; name=&quot;icon-position&quot; disabled&gt;
-&lt;label for=&quot;leading-icon&quot; class=&quot;disabled&quot;&gt;Leading Icon&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;leading-icon-control&quot; name=&quot;icon-position&quot; disabled&gt;
+    &lt;label for=&quot;leading-icon&quot; class=&quot;disabled&quot;&gt;Leading Icon&lt;/label&gt;
 
-&lt;div class=&quot;input-box display-flex-column&quot;&gt;
-    &lt;div class=&quot;input-icon-container&quot;&gt;
-        &lt;input type=&quot;password&quot; placeholder=&quot;Enter your password&quot; class=&quot;flex-grow&quot;&gt;
+    &lt;div class=&quot;input-box display-flex-column&quot;&gt;
+        &lt;div class=&quot;input-icon-container&quot;&gt;
+            &lt;input type=&quot;password&quot; placeholder=&quot;Enter your password&quot; class=&quot;flex-grow&quot;&gt;
+        &lt;/div&gt;
+        &lt;small class=&quot;character-count functional display-align-self-flex-end&quot;&gt;0/20&lt;i&gt;&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
-    &lt;small class=&quot;character-count functional display-align-self-flex-end&quot;&gt;0/20&lt;i&gt;&lt;/i&gt;&lt;/small&gt;
-&lt;/div&gt;
 </code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
                    </pre>
                 </div>
@@ -168,26 +170,26 @@
                     </div>
                     <pre id="myInput">
 <code class="language-html">
-&lt;input type=&quot;checkbox&quot; class=&quot;char-count-check&quot;&gt;
-&lt;label for=&quot;char-count&quot;&gt;Character Count&lt;/label&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;char-count-check&quot;&gt;
+    &lt;label for=&quot;char-count&quot;&gt;Character Count&lt;/label&gt;
 
-&lt;input type=&quot;radio&quot; class=&quot;trailing-icon-control&quot; name=&quot;icon-position&quot; checked&gt;
-&lt;label for=&quot;trailing-icon&quot;&gt;Trailing Icon&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;trailing-icon-control&quot; name=&quot;icon-position&quot; checked&gt;
+    &lt;label for=&quot;trailing-icon&quot;&gt;Trailing Icon&lt;/label&gt;
 
-&lt;input type=&quot;radio&quot; class=&quot;leading-icon-control&quot; name=&quot;icon-position&quot;&gt;
-&lt;label for=&quot;leading-icon&quot;&gt;Leading Icon&lt;/label&gt;
-&lt;div class=&quot;input-box display-flex-column with-helper-msg&quot;&gt;
-    &lt;div class=&quot;input-icon-container&quot;&gt;
-        &lt;input type=&quot;text&quot; placeholder=&quot;Enter your password&quot; class=&quot;flex-grow&quot;&gt;
-        &lt;img src=&quot;/Assets/icons/visible.svg&quot; alt=&quot;&quot; class=&quot;clickable-image img-functional&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;leading-icon-control&quot; name=&quot;icon-position&quot;&gt;
+    &lt;label for=&quot;leading-icon&quot;&gt;Leading Icon&lt;/label&gt;
+    &lt;div class=&quot;input-box display-flex-column with-helper-msg&quot;&gt;
+        &lt;div class=&quot;input-icon-container&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;Enter your password&quot; class=&quot;flex-grow&quot;&gt;
+            &lt;img src=&quot;/Assets/icons/visible.svg&quot; alt=&quot;&quot; class=&quot;clickable-image img-functional&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;helper-text-container display-justify-space-between&quot;&gt;
+            &lt;small class=&quot;helper-text&quot;&gt;&lt;i&gt;Password must contain a special character and a
+                    number&lt;/i&gt;&lt;/small&gt;
+            &lt;small
+                class=&quot;character-count functional display-align-self-flex-end&quot;&gt;0/20&lt;i&gt;&lt;/i&gt;&lt;/small&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;helper-text-container display-justify-space-between&quot;&gt;
-        &lt;small class=&quot;helper-text&quot;&gt;&lt;i&gt;Password must contain a special character and a
-                number&lt;/i&gt;&lt;/small&gt;
-        &lt;small
-            class=&quot;character-count functional display-align-self-flex-end&quot;&gt;0/20&lt;i&gt;&lt;/i&gt;&lt;/small&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
 </code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
                     </pre>
                 </div>

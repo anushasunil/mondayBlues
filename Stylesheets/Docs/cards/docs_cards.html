@@ -11,8 +11,7 @@
     <link rel="shortcut icon" href="/Assets/images/logo-modified.png" type="image/x-icon">
     <link rel="stylesheet" href="/Stylesheets/Docs/docs.css">
     <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
-        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/base16/humanoid-dark.min.css" integrity="sha512-VpzmzXvIXjYfKE4xjvTjF41gt15bbXf3u0CDWXDm105TA7yphqLSVqAc+gnpJswiS068uRYqiXCC4MvCycjQhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -42,7 +41,7 @@
             <div class="aside-list">
                 <ul class="component-redirect">
                     <li class="component">
-                        <a href="introduction.html" class="component-name">Introduction</a>
+                        <a href="/Stylesheets/Docs/introduction/introduction.html" class="component-name">Introduction</a>
                     </li>
                     <li class="component">
                         <a href="/Stylesheets/Docs/typography/docs_typography.html" class="component-name">Typography</a>
@@ -84,6 +83,9 @@
                     </li>
                     <li class="component">
                         <a href="/Stylesheets/Docs/navigation/docs_navigation.html" class="component-name">Navigation</a>
+                    </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/list/docs_list.html" class="component-name">Lists</a>
                     </li>
                 </ul>
             </div>
@@ -136,39 +138,39 @@
                     </div>
                     <pre id="myInput">
 <code class="language-html">
-&lt;div class=&quot;card with-badge&quot;&gt;
-    &lt;div class=&quot;image-container display-justify-center&quot;&gt;
-        &lt;img src=&quot;/Assets/images/image2.jpg&quot; alt=&quot;image&quot; class=&quot;card-img&quot;&gt;
-        &lt;p class=&quot;badge text&quot;&gt;Limited offer &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;content&quot;&gt;
-        &lt;h3&gt;V-Neck Knitted Crop Sweater&lt;/h3&gt;
-        &lt;p&gt;ZAFUL - &lt;small&gt;&lt;i&gt;Winter Collection 2022&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
-        &lt;div class=&quot;ratings display-align-center&quot;&gt;
-            &lt;img src=&quot;/Assets/icons/star.svg&quot; alt=&quot;star&quot; class=&quot;star-img&quot;&gt;
-            &lt;img src=&quot;/Assets/icons/star.svg&quot; alt=&quot;star&quot; class=&quot;star-img&quot;&gt;
-            &lt;img src=&quot;/Assets/icons/star.svg&quot; alt=&quot;star&quot; class=&quot;star-img&quot;&gt;
-            &lt;img src=&quot;/Assets/icons/star.svg&quot; alt=&quot;star&quot; class=&quot;star-img&quot;&gt;
-            &lt;img src=&quot;/Assets/icons/star.svg&quot; alt=&quot;star&quot; class=&quot;star-img&quot;&gt;
-            &lt;small class=&quot;count&quot;&gt;960&lt;/small&gt;
+    &lt;div class=&quot;card with-badge&quot;&gt;
+        &lt;div class=&quot;image-container display-justify-center&quot;&gt;
+            &lt;img src=&quot;/Assets/images/image2.jpg&quot; alt=&quot;image&quot; class=&quot;card-img&quot;&gt;
+            &lt;p class=&quot;badge text&quot;&gt;Limited offer &lt;/p&gt;
         &lt;/div&gt;
-        &lt;h4 class=&quot;price display-align-center display-justify-flex-end&quot;&gt;
-        &lt;p class=&quot;strike-off&quot;&gt;$26.65&lt;/p&gt;$15.99
-        &lt;/h4&gt;
-        &lt;div class=&quot;action-tab&quot;&gt;
-            &lt;div class=&quot;actions display-align-center  display-justify-flex-end&quot;&gt;
-                &lt;button class=&quot;solid-secondary display-align-center&quot;&gt;
-                    &lt;a href=&quot;#&quot;&gt;ADD TO CART&lt;/a&gt;
-                    &lt;img src=&quot;/Assets/icons/shopping-cart.svg&quot; alt=&quot;cart&quot;class=&quot;button-icons&quot;&gt;
-                &lt;/button&gt;
-                &lt;button class=&quot;solid-primary display-align-center&quot;&gt;
-                    &lt;a href=&quot;#&quot;&gt;BUY NOW&lt;/a&gt;
-                    &lt;img src=&quot;/Assets/icons/shopping-bag.svg&quot; alt=&quot;shopping-bag&quot;class=&quot;button-icons&quot;&gt;
-                &lt;/button&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            &lt;h3&gt;V-Neck Knitted Crop Sweater&lt;/h3&gt;
+            &lt;p&gt;ZAFUL - &lt;small&gt;&lt;i&gt;Winter Collection 2022&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+            &lt;div class=&quot;ratings display-align-center&quot;&gt;
+                &lt;img src=&quot;/Assets/icons/star.svg&quot; alt=&quot;star&quot; class=&quot;star-img&quot;&gt;
+                &lt;img src=&quot;/Assets/icons/star.svg&quot; alt=&quot;star&quot; class=&quot;star-img&quot;&gt;
+                &lt;img src=&quot;/Assets/icons/star.svg&quot; alt=&quot;star&quot; class=&quot;star-img&quot;&gt;
+                &lt;img src=&quot;/Assets/icons/star.svg&quot; alt=&quot;star&quot; class=&quot;star-img&quot;&gt;
+                &lt;img src=&quot;/Assets/icons/star.svg&quot; alt=&quot;star&quot; class=&quot;star-img&quot;&gt;
+                &lt;small class=&quot;count&quot;&gt;960&lt;/small&gt;
+            &lt;/div&gt;
+            &lt;h4 class=&quot;price display-align-center display-justify-flex-end&quot;&gt;
+            &lt;p class=&quot;strike-off&quot;&gt;$26.65&lt;/p&gt;$15.99
+            &lt;/h4&gt;
+            &lt;div class=&quot;action-tab&quot;&gt;
+                &lt;div class=&quot;actions display-align-center  display-justify-flex-end&quot;&gt;
+                    &lt;button class=&quot;solid-secondary display-align-center&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;ADD TO CART&lt;/a&gt;
+                        &lt;img src=&quot;/Assets/icons/shopping-cart.svg&quot; alt=&quot;cart&quot;class=&quot;button-icons&quot;&gt;
+                    &lt;/button&gt;
+                    &lt;button class=&quot;solid-primary display-align-center&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;BUY NOW&lt;/a&gt;
+                        &lt;img src=&quot;/Assets/icons/shopping-bag.svg&quot; alt=&quot;shopping-bag&quot;class=&quot;button-icons&quot;&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
 </code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
                     </pre>
                 </div>
