@@ -190,10 +190,6 @@ aside::-webkit-scrollbar {
     border-radius: var(--container-border);
 }
 
-.demo-wrapper nav{
-    width: 100%
-}
-
 .for-typography {
     color: var(--color-secondary)
 }
@@ -312,11 +308,5 @@ footer a:hover {
         position: sticky;
     }
 
-    .navigation-page-contents footer{
-        position: fixed;
-        bottom: 0;
-        left:0;
-        right: 0;
-    }
- 
+   
 }
