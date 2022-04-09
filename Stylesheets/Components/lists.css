@@ -1,0 +1,29 @@
+.list {
+    padding: 2rem;
+    background-color: var(--color-white);
+    border-radius: var(--container-border);
+    box-shadow: var(--mild-box-shadow);
+}
+
+.list .items {
+    margin: 1rem;
+}
+
+.list-header {
+    font-size: 1.5rem;
+}
+
+.unordered-list li{
+    list-style-type: circle; 
+    font-size: 1rem;
+}
+
+.style-none li {
+    list-style: none;
+}
+
+.list .stacked .items {
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: var(--container-border);
+}
