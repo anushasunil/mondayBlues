@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction | MondayBlues</title>
-    <link rel="shortcut icon" href="/Assets/images/logo-modified.png" type="image/x-icon">
+    <title>Navigation | MondayBlues</title>
     <link rel="stylesheet" href="/Stylesheets/Abstract/fontawesome-free-6.0.0-web/css/all.css">
-    <link rel="shortcut icon" href="/Assets/images/logo-modified.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/Assets/images/logo-modified.png" type="image/x-icon"> 
     <link rel="stylesheet" href="/Stylesheets/Docs/docs.css">
     <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
@@ -16,7 +15,7 @@
 </head>
 
 <body>
-    <div class="page-contents">
+    <div class="navigation-page-contents">
         <nav class="display-align-center display-justify-space-between">
             <div class="heading display-align-center">
                 <div class="hamburger-nav clickable-image">
@@ -90,23 +89,55 @@
         </aside>
         <div class="main-container">
             <div class="component-content display-align-self-flex-start">
-                <h2 class="component-heading">Introduction</h2>
+                <h3 class="component-heading">Navigation</h3>
                 <p class="about-component">
-                    Welcome to <span class="highlight semi-bold">mondayblues</span>, a component library.
-                    The aim of <span class="highlight semi-bold">mondayblues</span> is to provide some pre-designed
-                    components which you can
-                    use it in your projects right away with the help of utility classes by importing this css file in
-                    <i>your</i> css file!
+                    Navigation stays on the top of the page and holds important links to navigate throughout the website.
                 </p>
-                <pre id="myInput">
+                <div class="variant-box">
+                    <h3 class="variant-name">
+                        Standard
+                    </h3>
+                    <p class="variant-info">- basic navigation</p>
+                    <div class="demo-wrapper display-justify-center">
+                        <nav class="display-align-center display-justify-space-between">
+                            <div class="heading display-align-center">
+                                <div class="hamburger-nav clickable-image">
+                                    <div class="bars"></div>
+                                    <div class="bars"></div>
+                                    <div class="bars"></div>
+                                </div>
+                                <h2 class="title">Navigation</h2>
+                            </div>
+                            <div class="navbar">
+                                <button class="nav-btn solid-primary">
+                                    <i class="fa-solid fa-floppy-disk"></i>
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                   <pre id="myInput">
 <code class="language-html">
-    @import url(https://mondayblues.netlify.app/stylesheets/main.css);
-
+    &lt;nav class=&quot;display-align-center display-justify-space-between&quot;&gt;
+        &lt;div class=&quot;heading display-align-center&quot;&gt;
+            &lt;div class=&quot;hamburger-nav clickable-image&quot;&gt;
+                &lt;div class=&quot;bars&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;bars&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;bars&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;h2 class=&quot;title&quot;&gt;Navigation&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar&quot;&gt;
+            &lt;button class=&quot;nav-btn solid-primary&quot;&gt;
+                &lt;i class=&quot;fa-solid fa-floppy-disk&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
 </code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
-                </pre>
+                   </pre>
+                </div>
             </div>
         </div>
-        <footer class="fixed">
+        <footer>
             <p class="footer-text">created by <a href="https://github.com/anushasunil">anushasunil</a> - @neoGcamp</p>
         </footer>
     </div>
@@ -119,3 +150,4 @@
 </body>
 
 </html>
+
