@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal | MondayBlues</title>
+    <link rel="stylesheet" href="/Stylesheets/Abstract/fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="shortcut icon" href="/Assets/images/logo-modified.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Stylesheets/Docs/docs.css">
+    <link rel="stylesheet" href="/Stylesheets/Docs/codeblocks/codeblocks.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="navigation-page-contents">
+        <nav class="display-align-center display-justify-space-between">
+            <div class="heading display-align-center">
+                <div class="hamburger-nav clickable-image">
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                </div>
+                <div class="image-container">
+                    <img src="/Assets/images/logo.png" alt="logo" class="logo-nav">
+                </div>
+                <h2 class="title">mondayblues</h2>
+            </div>
+            <div class="navbar">
+                <button class="nav-btn solid-secondary"><a href="https://github.com/anushasunil/mondayblues">gitHub</a>
+                </button>
+                <button class="nav-btn solid-primary"><a href="/index.html">Home</a></button>
+            </div>
+        </nav>
+        <div class="aside-film">
+            <!-- aside background -->
+        </div>
+        <aside>
+            <h2 class="aside-heading">Get Started</h2>
+            <div class="aside-list">
+                <ul class="component-redirect">
+                    <li class="component">
+                        <a href="introduction.html" class="component-name">Introduction</a>
+                    </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/typography/docs_typography.html"
+                            class="component-name">Typography</a>
+                    </li>
+                </ul>
+            </div>
+            <h2 class="aside-heading">Component List</h2>
+            <div class="aside-list">
+                <ul class="component-redirect">
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/alert/docs_alert.html" class="component-name">Alert</a>
+                    </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/avatar/docs_avatar.html" class="component-name">Avatar</a>
+                    </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/badge/docs_badge.html" class="component-name">Badge</a>
+                    </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/buttons/docs_buttons.html" class="component-name">Buttons</a>
+                    </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/cards/docs_cards.html" class="component-name">Card</a>
+                    </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/grid/docs_grid.html" class="component-name">Simple-Grid</a>
+                    </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/images/docs_images.html" class="component-name">Images</a>
+                    </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/input/docs_input.html" class="component-name">Input</a>
+                    </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/ratings/docs_ratings.html" class="component-name">Ratings</a>
+                    </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/snackbar/docs_snackbar.html" class="component-name">Snackbar</a>
+                    </li>
+                    <li class="component">
+                        <a href="/Stylesheets/Docs/navigation/docs_navigation.html"
+                            class="component-name">Navigation</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main-container">
+            <div class="component-content display-align-self-flex-start">
+                <h3 class="component-heading">Modal</h3>
+                <p class="about-component">
+                    Modals are small pop-up windows which are really handy when you want to display to the user extra
+                    content, configuration or consent request.
+                </p>
+                <div class="variant-box">
+                    <h3 class="variant-name">
+                        Simple
+                    </h3>
+                    <p class="variant-info">- Simple dialogs display a list of items</p>
+                    <div class="demo-wrapper display-justify-center">
+                        <div class="modal simple display-flex-column">
+                            <h3 class="modal-header">Modal</h3>
+                            <ul class="contents">
+                                <li class="items display-align-center">
+                                    <i class="fa-solid fa-user-large icon"></i>
+                                    <p class="item-content">Person 1</p>
+                                </li>
+                                <li class="items display-align-center">
+                                    <i class="fa-solid fa-user-large icon"></i>
+                                    <p class="item-content">Person 2</p>
+                                </li>
+                                <li class="items display-align-center">
+                                    <i class="fa-solid fa-user-large icon"></i>
+                                    <p class="item-content">Person 3</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <pre id="myInput">
+<code class="language-html">
+    &lt;div class=&quot;modal simple display-flex-column&quot;&gt;
+        &lt;h3 class=&quot;modal-header&quot;&gt;Modal&lt;/h3&gt;
+        &lt;ul class=&quot;contents&quot;&gt;
+            &lt;li class=&quot;items display-align-center&quot;&gt;
+                &lt;i class=&quot;fa-solid fa-user-large icon&quot;&gt;&lt;/i&gt;
+                &lt;p class=&quot;item-content&quot;&gt;Person 1&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;items display-align-center&quot;&gt;
+                &lt;i class=&quot;fa-solid fa-user-large icon&quot;&gt;&lt;/i&gt;
+                &lt;p class=&quot;item-content&quot;&gt;Person 2&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;items display-align-center&quot;&gt;
+                &lt;i class=&quot;fa-solid fa-user-large icon&quot;&gt;&lt;/i&gt;
+                &lt;p class=&quot;item-content&quot;&gt;Person 3&lt;/p&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                   </pre>
+                </div>
+                <div class="variant-box">
+                    <h3 class="variant-name">
+                        Alert 
+                    </h3>
+                    <p class="variant-info">- Alert dialogs interrupt users with urgent information, details, or actions.</p>
+                    <div class="demo-wrapper display-justify-center">
+                        <div class="modal alert display-flex-column">
+                            <h3 class="modal-header">Modal</h3>
+                            <div class="contents display-flex-column">
+                                <p class="contents">This website wants to access the location of your device</p>
+                                <div class="action-btn display-align-center display-justify-flex-end">
+                                    <button class="solid-error bold">DENY</button>
+                                    <button class="solid-success bold">ALLOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <pre id="myInput">
+<code class="language-html">
+    &lt;div class=&quot;modal alert display-flex-column&quot;&gt;
+        &lt;h3 class=&quot;modal-header&quot;&gt;Modal&lt;/h3&gt;
+        &lt;div class=&quot;contents display-flex-column&quot;&gt;
+            &lt;p class=&quot;contents&quot;&gt;This website wants to access the location of your device&lt;/p&gt;
+            &lt;div class=&quot;action-btn display-align-center display-justify-flex-end&quot;&gt;
+                &lt;button class=&quot;solid-error bold&quot;&gt;DENY&lt;/button&gt;
+                &lt;button class=&quot;solid-success bold&quot;&gt;ALLOW&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                   </pre>
+                </div>
+                <div class="variant-box">
+                    <h3 class="variant-name">
+                        Confirmation 
+                    </h3>
+                    <p class="variant-info">- Confirmation dialogs require users to confirm a choice before the dialog is dismissed.</p>
+                    <div class="demo-wrapper display-justify-center">
+                        <div class="modal confirmational display-flex-column">
+                            <h3 class="modal-header">Modal</h3>
+                            <div class="contents display-flex-column">
+                                <ul class="item-list">
+                                    <li class="items display-align-center">
+                                        <i class="fa-solid fa-user-large icon"></i>
+                                        <p class="item-content flex-grow">Person 1</p>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li class="items display-align-center">
+                                        <i class="fa-solid fa-user-large icon"></i>
+                                        <p class="item-content flex-grow">Person 2</p>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li class="items display-align-center">
+                                        <i class="fa-solid fa-user-large icon"></i>
+                                        <p class="item-content flex-grow">Person 3</p>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li class="items display-align-center">
+                                        <i class="fa-solid fa-user-large icon"></i>
+                                        <p class="item-content flex-grow">Person 4</p>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li class="items display-align-center">
+                                        <i class="fa-solid fa-user-large icon"></i>
+                                        <p class="item-content flex-grow">Person 5</p>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li class="items display-align-center">
+                                        <i class="fa-solid fa-user-large icon"></i>
+                                        <p class="item-content flex-grow">Person 6</p>
+                                        <input type="checkbox">
+                                    </li>
+                                </ul>
+                                <div class="action-btn display-align-center">
+                                    <button class="solid-secondary bold flex-grow">ACTION 1</button>
+                                    <button class="solid-secondary bold flex-grow">ACTION 2</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <pre id="myInput">
+<code class="language-html">
+    &lt;div class=&quot;modal confirmational display-flex-column&quot;&gt;
+        &lt;h3 class=&quot;modal-header&quot;&gt;Modal&lt;/h3&gt;
+        &lt;div class=&quot;contents display-flex-column&quot;&gt;
+            &lt;ul class=&quot;item-list&quot;&gt;
+                &lt;li class=&quot;items display-align-center&quot;&gt;
+                    &lt;i class=&quot;fa-solid fa-user-large icon&quot;&gt;&lt;/i&gt;
+                    &lt;p class=&quot;item-content flex-grow&quot;&gt;Person 1&lt;/p&gt;
+                    &lt;input type=&quot;checkbox&quot;&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;items display-align-center&quot;&gt;
+                    &lt;i class=&quot;fa-solid fa-user-large icon&quot;&gt;&lt;/i&gt;
+                    &lt;p class=&quot;item-content flex-grow&quot;&gt;Person 2&lt;/p&gt;
+                    &lt;input type=&quot;checkbox&quot;&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;items display-align-center&quot;&gt;
+                    &lt;i class=&quot;fa-solid fa-user-large icon&quot;&gt;&lt;/i&gt;
+                    &lt;p class=&quot;item-content flex-grow&quot;&gt;Person 3&lt;/p&gt;
+                    &lt;input type=&quot;checkbox&quot;&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;items display-align-center&quot;&gt;
+                    &lt;i class=&quot;fa-solid fa-user-large icon&quot;&gt;&lt;/i&gt;
+                    &lt;p class=&quot;item-content flex-grow&quot;&gt;Person 4&lt;/p&gt;
+                    &lt;input type=&quot;checkbox&quot;&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;items display-align-center&quot;&gt;
+                    &lt;i class=&quot;fa-solid fa-user-large icon&quot;&gt;&lt;/i&gt;
+                    &lt;p class=&quot;item-content flex-grow&quot;&gt;Person 5&lt;/p&gt;
+                    &lt;input type=&quot;checkbox&quot;&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;items display-align-center&quot;&gt;
+                    &lt;i class=&quot;fa-solid fa-user-large icon&quot;&gt;&lt;/i&gt;
+                    &lt;p class=&quot;item-content flex-grow&quot;&gt;Person 6&lt;/p&gt;
+                    &lt;input type=&quot;checkbox&quot;&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;div class=&quot;action-btn display-align-center&quot;&gt;
+                &lt;button class=&quot;solid-secondary bold flex-grow&quot;&gt;ACTION 1&lt;/button&gt;
+                &lt;button class=&quot;solid-secondary bold flex-grow&quot;&gt;ACTION 2&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code><button id="button" class="snippet-btn solid-secondary"><i class="fas fa-copy"></i></button>
+                   </pre>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p class="footer-text">created by <a href="https://github.com/anushasunil">anushasunil</a> - @neoGcamp</p>
+        </footer>
+    </div>
+    <script src="/Stylesheets/Docs/docs_nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/Stylesheets/Docs/codeblocks/codeblocks.js"></script>
+</body>
+
+</html>

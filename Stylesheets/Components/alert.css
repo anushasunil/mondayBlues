@@ -1,7 +1,3 @@
-body {
-    background-color: var(--color-background-primary);
-}
-
 .alert-box, .alert-content{
     flex-wrap: nowrap;
 }

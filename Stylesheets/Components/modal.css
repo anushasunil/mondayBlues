@@ -1,0 +1,34 @@
+.modal {
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: var(--container-border);
+    box-shadow: var(--mild-box-shadow);
+    width: clamp(20rem, 22rem, 25rem)
+}
+
+.modal .contents {
+    gap: 2rem;
+}
+
+.modal .icon {
+    font-size: 1.5rem;
+}
+
+.modal .items {
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.modal-header {
+    font-size: 1.75rem;
+    padding: 8px 0;
+}
+
+.modal .action-btn {
+    gap: 8px;
+}
+
+.modal.confirmational .item-list {
+    overflow-y: scroll;
+    height: 10rem;
+}
